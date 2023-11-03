@@ -1,0 +1,1786 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc36cfebd7e2f4eb0f7f0581a0a151, type: 3}
+  m_Name: bruises
+  m_EditorClassIdentifier: 
+  initialOffset: 0
+  songTitle: Bruises
+  songArtist: Fox Stevenson
+  hitObjects:
+  - hitObjectType: 1
+    time: 90
+  - hitObjectType: 1
+    time: 90
+  - hitObjectType: 0
+    time: 1469
+  - hitObjectType: 0
+    time: 2848
+  - hitObjectType: 1
+    time: 4227
+  - hitObjectType: 0
+    time: 4917
+  - hitObjectType: 1
+    time: 5607
+  - hitObjectType: 1
+    time: 6986
+  - hitObjectType: 0
+    time: 8365
+  - hitObjectType: 1
+    time: 9745
+  - hitObjectType: 0
+    time: 10434
+  - hitObjectType: 0
+    time: 11124
+  - hitObjectType: 1
+    time: 11469
+  - hitObjectType: 1
+    time: 11986
+  - hitObjectType: 0
+    time: 12331
+  - hitObjectType: 0
+    time: 12676
+  - hitObjectType: 1
+    time: 13538
+  - hitObjectType: 0
+    time: 13710
+  - hitObjectType: 1
+    time: 14227
+  - hitObjectType: 1
+    time: 14745
+  - hitObjectType: 1
+    time: 15090
+  - hitObjectType: 0
+    time: 15434
+  - hitObjectType: 1
+    time: 15779
+  - hitObjectType: 1
+    time: 16124
+  - hitObjectType: 0
+    time: 16469
+  - hitObjectType: 1
+    time: 16986
+  - hitObjectType: 0
+    time: 17503
+  - hitObjectType: 1
+    time: 17676
+  - hitObjectType: 1
+    time: 17848
+  - hitObjectType: 1
+    time: 18193
+  - hitObjectType: 1
+    time: 19055
+  - hitObjectType: 0
+    time: 19227
+  - hitObjectType: 0
+    time: 22158
+  - hitObjectType: 1
+    time: 22848
+  - hitObjectType: 1
+    time: 23538
+  - hitObjectType: 0
+    time: 23883
+  - hitObjectType: 1
+    time: 24227
+  - hitObjectType: 0
+    time: 24917
+  - hitObjectType: 1
+    time: 25607
+  - hitObjectType: 1
+    time: 25952
+  - hitObjectType: 1
+    time: 26296
+  - hitObjectType: 1
+    time: 26986
+  - hitObjectType: 0
+    time: 27676
+  - hitObjectType: 1
+    time: 28365
+  - hitObjectType: 1
+    time: 29055
+  - hitObjectType: 1
+    time: 29400
+  - hitObjectType: 0
+    time: 29745
+  - hitObjectType: 0
+    time: 30434
+  - hitObjectType: 0
+    time: 31124
+  - hitObjectType: 1
+    time: 31469
+  - hitObjectType: 1
+    time: 31814
+  - hitObjectType: 1
+    time: 32503
+  - hitObjectType: 0
+    time: 33193
+  - hitObjectType: 0
+    time: 33538
+  - hitObjectType: 1
+    time: 33883
+  - hitObjectType: 1
+    time: 34572
+  - hitObjectType: 0
+    time: 34917
+  - hitObjectType: 1
+    time: 35090
+  - hitObjectType: 1
+    time: 35262
+  - hitObjectType: 1
+    time: 35607
+  - hitObjectType: 0
+    time: 35952
+  - hitObjectType: 1
+    time: 36641
+  - hitObjectType: 0
+    time: 36986
+  - hitObjectType: 0
+    time: 37158
+  - hitObjectType: 1
+    time: 37331
+  - hitObjectType: 0
+    time: 37676
+  - hitObjectType: 1
+    time: 38021
+  - hitObjectType: 0
+    time: 38710
+  - hitObjectType: 0
+    time: 39055
+  - hitObjectType: 1
+    time: 39400
+  - hitObjectType: 1
+    time: 40090
+  - hitObjectType: 1
+    time: 40434
+  - hitObjectType: 0
+    time: 40607
+  - hitObjectType: 1
+    time: 40779
+  - hitObjectType: 1
+    time: 41124
+  - hitObjectType: 1
+    time: 41469
+  - hitObjectType: 1
+    time: 44227
+  - hitObjectType: 1
+    time: 45607
+  - hitObjectType: 0
+    time: 46986
+  - hitObjectType: 1
+    time: 47676
+  - hitObjectType: 1
+    time: 47848
+  - hitObjectType: 1
+    time: 48365
+  - hitObjectType: 0
+    time: 48538
+  - hitObjectType: 1
+    time: 49055
+  - hitObjectType: 0
+    time: 49227
+  - hitObjectType: 1
+    time: 49745
+  - hitObjectType: 1
+    time: 51124
+  - hitObjectType: 0
+    time: 52503
+  - hitObjectType: 1
+    time: 53193
+  - hitObjectType: 1
+    time: 53365
+  - hitObjectType: 1
+    time: 53883
+  - hitObjectType: 0
+    time: 54055
+  - hitObjectType: 1
+    time: 54572
+  - hitObjectType: 0
+    time: 54745
+  - hitObjectType: 1
+    time: 55262
+  - hitObjectType: 0
+    time: 55607
+  - hitObjectType: 1
+    time: 55952
+  - hitObjectType: 1
+    time: 56641
+  - hitObjectType: 0
+    time: 56986
+  - hitObjectType: 1
+    time: 57158
+  - hitObjectType: 1
+    time: 57331
+  - hitObjectType: 1
+    time: 57676
+  - hitObjectType: 0
+    time: 58021
+  - hitObjectType: 0
+    time: 58710
+  - hitObjectType: 1
+    time: 59055
+  - hitObjectType: 0
+    time: 59227
+  - hitObjectType: 1
+    time: 59400
+  - hitObjectType: 0
+    time: 59745
+  - hitObjectType: 0
+    time: 60090
+  - hitObjectType: 1
+    time: 60779
+  - hitObjectType: 0
+    time: 61124
+  - hitObjectType: 0
+    time: 61296
+  - hitObjectType: 1
+    time: 61469
+  - hitObjectType: 0
+    time: 61814
+  - hitObjectType: 0
+    time: 62158
+  - hitObjectType: 0
+    time: 62331
+  - hitObjectType: 1
+    time: 62503
+  - hitObjectType: 0
+    time: 62676
+  - hitObjectType: 1
+    time: 62848
+  - hitObjectType: 0
+    time: 63193
+  - hitObjectType: 1
+    time: 63538
+  - hitObjectType: 0
+    time: 65779
+  - hitObjectType: 1
+    time: 65952
+  - hitObjectType: 0
+    time: 66296
+  - hitObjectType: 1
+    time: 66641
+  - hitObjectType: 0
+    time: 66986
+  - hitObjectType: 1
+    time: 67158
+  - hitObjectType: 1
+    time: 67331
+  - hitObjectType: 0
+    time: 67676
+  - hitObjectType: 1
+    time: 68021
+  - hitObjectType: 0
+    time: 68365
+  - hitObjectType: 0
+    time: 68538
+  - hitObjectType: 1
+    time: 68710
+  - hitObjectType: 0
+    time: 69055
+  - hitObjectType: 1
+    time: 69400
+  - hitObjectType: 1
+    time: 69745
+  - hitObjectType: 0
+    time: 69917
+  - hitObjectType: 1
+    time: 70090
+  - hitObjectType: 0
+    time: 70434
+  - hitObjectType: 1
+    time: 70779
+  - hitObjectType: 0
+    time: 71124
+  - hitObjectType: 0
+    time: 71814
+  - hitObjectType: 1
+    time: 72158
+  - hitObjectType: 0
+    time: 72503
+  - hitObjectType: 1
+    time: 72676
+  - hitObjectType: 1
+    time: 72848
+  - hitObjectType: 1
+    time: 73193
+  - hitObjectType: 0
+    time: 73538
+  - hitObjectType: 0
+    time: 73883
+  - hitObjectType: 0
+    time: 74055
+  - hitObjectType: 1
+    time: 74227
+  - hitObjectType: 1
+    time: 74572
+  - hitObjectType: 0
+    time: 74917
+  - hitObjectType: 0
+    time: 75262
+  - hitObjectType: 1
+    time: 75434
+  - hitObjectType: 1
+    time: 75607
+  - hitObjectType: 0
+    time: 75952
+  - hitObjectType: 1
+    time: 76296
+  - hitObjectType: 0
+    time: 76641
+  - hitObjectType: 1
+    time: 77331
+  - hitObjectType: 1
+    time: 77848
+  - hitObjectType: 1
+    time: 78021
+  - hitObjectType: 0
+    time: 78193
+  - hitObjectType: 1
+    time: 78365
+  - hitObjectType: 1
+    time: 78710
+  - hitObjectType: 1
+    time: 79227
+  - hitObjectType: 0
+    time: 79400
+  - hitObjectType: 1
+    time: 79572
+  - hitObjectType: 0
+    time: 79745
+  - hitObjectType: 1
+    time: 80090
+  - hitObjectType: 1
+    time: 80607
+  - hitObjectType: 0
+    time: 80779
+  - hitObjectType: 0
+    time: 80952
+  - hitObjectType: 1
+    time: 81124
+  - hitObjectType: 1
+    time: 81469
+  - hitObjectType: 0
+    time: 81986
+  - hitObjectType: 0
+    time: 82158
+  - hitObjectType: 0
+    time: 82331
+  - hitObjectType: 1
+    time: 82503
+  - hitObjectType: 0
+    time: 82848
+  - hitObjectType: 1
+    time: 83365
+  - hitObjectType: 0
+    time: 83538
+  - hitObjectType: 1
+    time: 83710
+  - hitObjectType: 0
+    time: 83883
+  - hitObjectType: 1
+    time: 84227
+  - hitObjectType: 1
+    time: 84745
+  - hitObjectType: 1
+    time: 84917
+  - hitObjectType: 0
+    time: 85090
+  - hitObjectType: 1
+    time: 85262
+  - hitObjectType: 1
+    time: 85607
+  - hitObjectType: 1
+    time: 86124
+  - hitObjectType: 0
+    time: 86296
+  - hitObjectType: 1
+    time: 86469
+  - hitObjectType: 1
+    time: 86641
+  - hitObjectType: 1
+    time: 86986
+  - hitObjectType: 0
+    time: 87503
+  - hitObjectType: 0
+    time: 87676
+  - hitObjectType: 1
+    time: 87848
+  - hitObjectType: 0
+    time: 88021
+  - hitObjectType: 1
+    time: 88365
+  - hitObjectType: 1
+    time: 89055
+  - hitObjectType: 0
+    time: 89227
+  - hitObjectType: 1
+    time: 89400
+  - hitObjectType: 1
+    time: 89745
+  - hitObjectType: 0
+    time: 90090
+  - hitObjectType: 0
+    time: 90434
+  - hitObjectType: 1
+    time: 90607
+  - hitObjectType: 1
+    time: 90779
+  - hitObjectType: 1
+    time: 91124
+  - hitObjectType: 0
+    time: 91469
+  - hitObjectType: 1
+    time: 91814
+  - hitObjectType: 0
+    time: 91986
+  - hitObjectType: 1
+    time: 92503
+  - hitObjectType: 0
+    time: 92676
+  - hitObjectType: 1
+    time: 93193
+  - hitObjectType: 0
+    time: 93365
+  - hitObjectType: 1
+    time: 93883
+  - hitObjectType: 0
+    time: 94572
+  - hitObjectType: 1
+    time: 94745
+  - hitObjectType: 1
+    time: 94917
+  - hitObjectType: 1
+    time: 95262
+  - hitObjectType: 0
+    time: 95607
+  - hitObjectType: 1
+    time: 95952
+  - hitObjectType: 0
+    time: 96124
+  - hitObjectType: 1
+    time: 96296
+  - hitObjectType: 0
+    time: 96641
+  - hitObjectType: 1
+    time: 96986
+  - hitObjectType: 0
+    time: 97331
+  - hitObjectType: 1
+    time: 97503
+  - hitObjectType: 1
+    time: 98021
+  - hitObjectType: 0
+    time: 98193
+  - hitObjectType: 1
+    time: 98710
+  - hitObjectType: 0
+    time: 98883
+  - hitObjectType: 0
+    time: 99400
+  - hitObjectType: 0
+    time: 100090
+  - hitObjectType: 0
+    time: 100779
+  - hitObjectType: 0
+    time: 101469
+  - hitObjectType: 0
+    time: 102158
+  - hitObjectType: 0
+    time: 102848
+  - hitObjectType: 0
+    time: 103538
+  - hitObjectType: 0
+    time: 104227
+  - hitObjectType: 1
+    time: 104917
+  - hitObjectType: 0
+    time: 105262
+  - hitObjectType: 1
+    time: 105607
+  - hitObjectType: 1
+    time: 105779
+  - hitObjectType: 1
+    time: 105952
+  - hitObjectType: 0
+    time: 106296
+  - hitObjectType: 0
+    time: 106469
+  - hitObjectType: 1
+    time: 106641
+  - hitObjectType: 1
+    time: 106986
+  - hitObjectType: 0
+    time: 107331
+  - hitObjectType: 1
+    time: 107676
+  - hitObjectType: 1
+    time: 107848
+  - hitObjectType: 0
+    time: 108021
+  - hitObjectType: 0
+    time: 108365
+  - hitObjectType: 1
+    time: 108538
+  - hitObjectType: 0
+    time: 108710
+  - hitObjectType: 0
+    time: 109055
+  - hitObjectType: 1
+    time: 109917
+  - hitObjectType: 0
+    time: 110090
+  - hitObjectType: 1
+    time: 110434
+  - hitObjectType: 0
+    time: 110779
+  - hitObjectType: 0
+    time: 111124
+  - hitObjectType: 1
+    time: 111296
+  - hitObjectType: 1
+    time: 111469
+  - hitObjectType: 0
+    time: 111814
+  - hitObjectType: 1
+    time: 112158
+  - hitObjectType: 1
+    time: 112503
+  - hitObjectType: 0
+    time: 112676
+  - hitObjectType: 1
+    time: 112848
+  - hitObjectType: 0
+    time: 113193
+  - hitObjectType: 1
+    time: 113538
+  - hitObjectType: 1
+    time: 113883
+  - hitObjectType: 0
+    time: 114055
+  - hitObjectType: 1
+    time: 114227
+  - hitObjectType: 1
+    time: 114572
+  - hitObjectType: 1
+    time: 114917
+  - hitObjectType: 0
+    time: 115262
+  - hitObjectType: 1
+    time: 115952
+  - hitObjectType: 1
+    time: 116296
+  - hitObjectType: 0
+    time: 116641
+  - hitObjectType: 1
+    time: 116814
+  - hitObjectType: 1
+    time: 116986
+  - hitObjectType: 1
+    time: 117331
+  - hitObjectType: 0
+    time: 117676
+  - hitObjectType: 0
+    time: 118021
+  - hitObjectType: 0
+    time: 118193
+  - hitObjectType: 1
+    time: 118365
+  - hitObjectType: 1
+    time: 118710
+  - hitObjectType: 1
+    time: 119055
+  - hitObjectType: 0
+    time: 119400
+  - hitObjectType: 1
+    time: 119572
+  - hitObjectType: 1
+    time: 119745
+  - hitObjectType: 1
+    time: 120090
+  - hitObjectType: 1
+    time: 120434
+  - hitObjectType: 0
+    time: 120779
+  - hitObjectType: 1
+    time: 121469
+  - hitObjectType: 1
+    time: 121986
+  - hitObjectType: 0
+    time: 122158
+  - hitObjectType: 1
+    time: 122331
+  - hitObjectType: 0
+    time: 122503
+  - hitObjectType: 1
+    time: 122848
+  - hitObjectType: 1
+    time: 123365
+  - hitObjectType: 1
+    time: 123538
+  - hitObjectType: 0
+    time: 123710
+  - hitObjectType: 1
+    time: 123883
+  - hitObjectType: 1
+    time: 124227
+  - hitObjectType: 1
+    time: 124745
+  - hitObjectType: 0
+    time: 124917
+  - hitObjectType: 0
+    time: 125090
+  - hitObjectType: 1
+    time: 125262
+  - hitObjectType: 1
+    time: 125607
+  - hitObjectType: 0
+    time: 126124
+  - hitObjectType: 0
+    time: 126296
+  - hitObjectType: 1
+    time: 126469
+  - hitObjectType: 1
+    time: 126641
+  - hitObjectType: 0
+    time: 126986
+  - hitObjectType: 1
+    time: 127503
+  - hitObjectType: 0
+    time: 127676
+  - hitObjectType: 1
+    time: 127848
+  - hitObjectType: 0
+    time: 128021
+  - hitObjectType: 1
+    time: 128365
+  - hitObjectType: 1
+    time: 128883
+  - hitObjectType: 1
+    time: 129055
+  - hitObjectType: 1
+    time: 129227
+  - hitObjectType: 0
+    time: 129400
+  - hitObjectType: 0
+    time: 129745
+  - hitObjectType: 1
+    time: 130262
+  - hitObjectType: 0
+    time: 130434
+  - hitObjectType: 0
+    time: 130607
+  - hitObjectType: 1
+    time: 130779
+  - hitObjectType: 1
+    time: 131124
+  - hitObjectType: 1
+    time: 131641
+  - hitObjectType: 0
+    time: 131814
+  - hitObjectType: 1
+    time: 131986
+  - hitObjectType: 0
+    time: 132158
+  - hitObjectType: 1
+    time: 132503
+  - hitObjectType: 0
+    time: 133883
+  - hitObjectType: 0
+    time: 135262
+  - hitObjectType: 1
+    time: 136641
+  - hitObjectType: 0
+    time: 137331
+  - hitObjectType: 1
+    time: 138021
+  - hitObjectType: 1
+    time: 139400
+  - hitObjectType: 0
+    time: 140779
+  - hitObjectType: 1
+    time: 143538
+  - hitObjectType: 1
+    time: 144227
+  - hitObjectType: 1
+    time: 144917
+  - hitObjectType: 0
+    time: 145262
+  - hitObjectType: 0
+    time: 145434
+  - hitObjectType: 0
+    time: 145607
+  - hitObjectType: 1
+    time: 145952
+  - hitObjectType: 1
+    time: 146296
+  - hitObjectType: 0
+    time: 146986
+  - hitObjectType: 1
+    time: 147331
+  - hitObjectType: 0
+    time: 147503
+  - hitObjectType: 1
+    time: 147676
+  - hitObjectType: 0
+    time: 148021
+  - hitObjectType: 1
+    time: 148365
+  - hitObjectType: 0
+    time: 149055
+  - hitObjectType: 0
+    time: 149400
+  - hitObjectType: 1
+    time: 149745
+  - hitObjectType: 1
+    time: 150434
+  - hitObjectType: 1
+    time: 150779
+  - hitObjectType: 0
+    time: 150952
+  - hitObjectType: 1
+    time: 151124
+  - hitObjectType: 0
+    time: 151469
+  - hitObjectType: 1
+    time: 151814
+  - hitObjectType: 1
+    time: 154572
+  - hitObjectType: 1
+    time: 155952
+  - hitObjectType: 0
+    time: 157331
+  - hitObjectType: 1
+    time: 158021
+  - hitObjectType: 1
+    time: 158193
+  - hitObjectType: 1
+    time: 158710
+  - hitObjectType: 0
+    time: 158883
+  - hitObjectType: 1
+    time: 159400
+  - hitObjectType: 0
+    time: 159572
+  - hitObjectType: 1
+    time: 160090
+  - hitObjectType: 1
+    time: 161469
+  - hitObjectType: 0
+    time: 162848
+  - hitObjectType: 1
+    time: 163538
+  - hitObjectType: 1
+    time: 163710
+  - hitObjectType: 1
+    time: 164227
+  - hitObjectType: 0
+    time: 164400
+  - hitObjectType: 1
+    time: 164917
+  - hitObjectType: 0
+    time: 165090
+  - hitObjectType: 1
+    time: 165607
+  - hitObjectType: 0
+    time: 165952
+  - hitObjectType: 1
+    time: 166296
+  - hitObjectType: 1
+    time: 166986
+  - hitObjectType: 0
+    time: 167331
+  - hitObjectType: 1
+    time: 167503
+  - hitObjectType: 1
+    time: 167676
+  - hitObjectType: 1
+    time: 168021
+  - hitObjectType: 1
+    time: 168365
+  - hitObjectType: 0
+    time: 169055
+  - hitObjectType: 1
+    time: 169400
+  - hitObjectType: 0
+    time: 169572
+  - hitObjectType: 1
+    time: 169745
+  - hitObjectType: 0
+    time: 170090
+  - hitObjectType: 0
+    time: 170434
+  - hitObjectType: 1
+    time: 171124
+  - hitObjectType: 0
+    time: 171469
+  - hitObjectType: 0
+    time: 171641
+  - hitObjectType: 1
+    time: 171814
+  - hitObjectType: 0
+    time: 172158
+  - hitObjectType: 0
+    time: 172503
+  - hitObjectType: 0
+    time: 172676
+  - hitObjectType: 1
+    time: 172848
+  - hitObjectType: 0
+    time: 173021
+  - hitObjectType: 1
+    time: 173193
+  - hitObjectType: 0
+    time: 173538
+  - hitObjectType: 1
+    time: 173883
+  - hitObjectType: 1
+    time: 176296
+  - hitObjectType: 0
+    time: 176641
+  - hitObjectType: 0
+    time: 176986
+  - hitObjectType: 0
+    time: 177331
+  - hitObjectType: 0
+    time: 177676
+  - hitObjectType: 1
+    time: 178021
+  - hitObjectType: 0
+    time: 178710
+  - hitObjectType: 1
+    time: 179400
+  - hitObjectType: 0
+    time: 179745
+  - hitObjectType: 1
+    time: 180090
+  - hitObjectType: 0
+    time: 180779
+  - hitObjectType: 1
+    time: 181124
+  - hitObjectType: 1
+    time: 181469
+  - hitObjectType: 0
+    time: 182158
+  - hitObjectType: 1
+    time: 182503
+  - hitObjectType: 1
+    time: 182848
+  - hitObjectType: 0
+    time: 183538
+  - hitObjectType: 1
+    time: 183883
+  - hitObjectType: 0
+    time: 184227
+  - hitObjectType: 1
+    time: 184917
+  - hitObjectType: 1
+    time: 185262
+  - hitObjectType: 1
+    time: 185607
+  - hitObjectType: 0
+    time: 185952
+  - hitObjectType: 0
+    time: 186296
+  - hitObjectType: 1
+    time: 186986
+  - hitObjectType: 1
+    time: 187676
+  - hitObjectType: 0
+    time: 188021
+  - hitObjectType: 0
+    time: 188365
+  - hitObjectType: 1
+    time: 188710
+  - hitObjectType: 0
+    time: 189055
+  - hitObjectType: 0
+    time: 189400
+  - hitObjectType: 1
+    time: 189745
+  - hitObjectType: 1
+    time: 190090
+  - hitObjectType: 0
+    time: 190434
+  - hitObjectType: 0
+    time: 190779
+  - hitObjectType: 1
+    time: 191124
+  - hitObjectType: 1
+    time: 191469
+  - hitObjectType: 1
+    time: 191814
+  - hitObjectType: 0
+    time: 192158
+  - hitObjectType: 0
+    time: 192503
+  - hitObjectType: 1
+    time: 193193
+  - hitObjectType: 1
+    time: 193538
+  - hitObjectType: 0
+    time: 193883
+  - hitObjectType: 0
+    time: 194227
+  - hitObjectType: 1
+    time: 194572
+  - hitObjectType: 1
+    time: 194917
+  - hitObjectType: 0
+    time: 195262
+  - hitObjectType: 0
+    time: 195607
+  - hitObjectType: 1
+    time: 195952
+  - hitObjectType: 1
+    time: 196986
+  - hitObjectType: 1
+    time: 197331
+  - hitObjectType: 0
+    time: 197676
+  - hitObjectType: 0
+    time: 198021
+  - hitObjectType: 1
+    time: 198710
+  - hitObjectType: 1
+    time: 199400
+  - hitObjectType: 0
+    time: 199572
+  - hitObjectType: 1
+    time: 199745
+  - hitObjectType: 1
+    time: 200090
+  - hitObjectType: 0
+    time: 200434
+  - hitObjectType: 0
+    time: 200779
+  - hitObjectType: 1
+    time: 200952
+  - hitObjectType: 1
+    time: 201124
+  - hitObjectType: 1
+    time: 201469
+  - hitObjectType: 0
+    time: 201814
+  - hitObjectType: 1
+    time: 202158
+  - hitObjectType: 1
+    time: 202331
+  - hitObjectType: 1
+    time: 202848
+  - hitObjectType: 0
+    time: 203021
+  - hitObjectType: 1
+    time: 203538
+  - hitObjectType: 0
+    time: 203710
+  - hitObjectType: 1
+    time: 204227
+  - hitObjectType: 1
+    time: 204917
+  - hitObjectType: 1
+    time: 205090
+  - hitObjectType: 1
+    time: 205262
+  - hitObjectType: 0
+    time: 205607
+  - hitObjectType: 1
+    time: 205952
+  - hitObjectType: 1
+    time: 206296
+  - hitObjectType: 0
+    time: 206469
+  - hitObjectType: 1
+    time: 206641
+  - hitObjectType: 0
+    time: 206986
+  - hitObjectType: 1
+    time: 207331
+  - hitObjectType: 1
+    time: 207676
+  - hitObjectType: 1
+    time: 207848
+  - hitObjectType: 1
+    time: 208365
+  - hitObjectType: 0
+    time: 208538
+  - hitObjectType: 1
+    time: 209055
+  - hitObjectType: 0
+    time: 209227
+  - hitObjectType: 0
+    time: 209745
+  - hitObjectType: 0
+    time: 210434
+  - hitObjectType: 0
+    time: 211124
+  - hitObjectType: 1
+    time: 211814
+  - hitObjectType: 0
+    time: 212503
+  - hitObjectType: 1
+    time: 213193
+  - hitObjectType: 0
+    time: 213883
+  - hitObjectType: 0
+    time: 214572
+  - hitObjectType: 1
+    time: 215262
+  - hitObjectType: 1
+    time: 215952
+  - hitObjectType: 1
+    time: 216641
+  - hitObjectType: 1
+    time: 216986
+  - hitObjectType: 0
+    time: 217331
+  - hitObjectType: 1
+    time: 218021
+  timingPoints:
+  - Inherited: 0
+    time: 90
+    millisecondsPerBeat: 344.827586206897
+  - Inherited: 1
+    time: 90
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 11124
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 22158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 32503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 33193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 42848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 44227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 44917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 64917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 65434
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 65952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 66296
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71469
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 76986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 77331
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 82503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 82848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 88021
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 88365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 93538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 93883
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98883
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 99400
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 100090
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 110428
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 110434
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 115607
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 115952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 121124
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 121469
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 126641
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 126986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 129745
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 130262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 131814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 131986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 132158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 132503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 140952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 142158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 143538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 151986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 153193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 154572
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 155262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 176986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178250
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 179055
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 179400
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 181814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 182158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 187331
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 187676
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 192848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 193193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 194572
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195147
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195492
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195607
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 197906
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198021
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198250
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198704
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 207848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 208365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 208538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209055
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209745
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 211124
+    millisecondsPerBeat: -100
+  - Inherited: 0
+    time: 90
+    millisecondsPerBeat: 344.827586206897
+  - Inherited: 1
+    time: 90
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 11124
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 22158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 32503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 33193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 42848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 44227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 44917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 64917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 65434
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 65952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 66296
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71469
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 76986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 77331
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 82503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 82848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 88021
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 88365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 93538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 93883
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98883
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 99400
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 100090
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 110428
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 110434
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 115607
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 115952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 121124
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 121469
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 126641
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 126986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 129745
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 130262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 131814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 131986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 132158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 132503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 140952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 142158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 143538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 151986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 153193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 154572
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 155262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 176986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178250
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 179055
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 179400
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 181814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 182158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 187331
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 187676
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 192848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 193193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 194572
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195147
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195492
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195607
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 197906
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198021
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198250
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198704
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 207848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 208365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 208538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209055
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209745
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 211124
+    millisecondsPerBeat: -100
+  - Inherited: 0
+    time: 90
+    millisecondsPerBeat: 344.827586206897
+  - Inherited: 1
+    time: 90
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 11124
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 22158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 32503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 33193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 42848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 44227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 44917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 64917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 65434
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 65952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 66296
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71469
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 76986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 77331
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 82503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 82848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 88021
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 88365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 93538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 93883
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98883
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 99400
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 100090
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104917
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 110428
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 110434
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 115607
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 115952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 121124
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 121469
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 126641
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 126986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 129745
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 130262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 131814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 131986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 132158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 132503
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 140952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 142158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 143538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 151986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 153193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 154572
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 155262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 176986
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178250
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 178710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 179055
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 179400
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 181814
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 182158
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 187331
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 187676
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 192848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 193193
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 194572
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195147
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195262
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195492
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195607
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 195952
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 197906
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198021
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198250
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198704
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 198710
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 207848
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 208365
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 208538
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209055
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209227
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 209745
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 211124
+    millisecondsPerBeat: -100
+  beforePlayDelay: 5
+  approachRate: 9
+  audioClip: {fileID: 8300000, guid: 7687c9b4e3e0bd4499e0c2bcd5ebf8fe, type: 3}

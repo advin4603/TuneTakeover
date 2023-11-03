@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc36cfebd7e2f4eb0f7f0581a0a151, type: 3}
+  m_Name: canYouFeelMyHeart
+  m_EditorClassIdentifier: 
+  initialOffset: 0
+  songTitle: Can You Feel My Heart (Cut Ver.)
+  songArtist: Bring Me The Horizon
+  hitObjects:
+  - hitObjectType: 0
+    time: 664
+  - hitObjectType: 1
+    time: 1367
+  - hitObjectType: 0
+    time: 2539
+  - hitObjectType: 1
+    time: 3242
+  - hitObjectType: 1
+    time: 4414
+  - hitObjectType: 0
+    time: 5117
+  - hitObjectType: 1
+    time: 6289
+  - hitObjectType: 0
+    time: 6992
+  - hitObjectType: 0
+    time: 7460
+  - hitObjectType: 0
+    time: 8164
+  - hitObjectType: 1
+    time: 8867
+  - hitObjectType: 0
+    time: 10039
+  - hitObjectType: 1
+    time: 10742
+  - hitObjectType: 1
+    time: 11914
+  - hitObjectType: 0
+    time: 12617
+  - hitObjectType: 0
+    time: 15664
+  - hitObjectType: 1
+    time: 16601
+  - hitObjectType: 1
+    time: 16953
+  - hitObjectType: 0
+    time: 17539
+  - hitObjectType: 0
+    time: 18476
+  - hitObjectType: 0
+    time: 18828
+  - hitObjectType: 1
+    time: 19414
+  - hitObjectType: 0
+    time: 20351
+  - hitObjectType: 1
+    time: 20703
+  - hitObjectType: 1
+    time: 21289
+  - hitObjectType: 0
+    time: 21757
+  - hitObjectType: 1
+    time: 22226
+  - hitObjectType: 1
+    time: 22695
+  - hitObjectType: 0
+    time: 23164
+  - hitObjectType: 1
+    time: 24101
+  - hitObjectType: 1
+    time: 24453
+  - hitObjectType: 0
+    time: 25039
+  - hitObjectType: 0
+    time: 25976
+  - hitObjectType: 0
+    time: 26328
+  - hitObjectType: 1
+    time: 26914
+  - hitObjectType: 0
+    time: 27851
+  - hitObjectType: 1
+    time: 28203
+  - hitObjectType: 1
+    time: 28789
+  - hitObjectType: 1
+    time: 29257
+  - hitObjectType: 0
+    time: 29726
+  - hitObjectType: 0
+    time: 30195
+  - hitObjectType: 1
+    time: 30664
+  - hitObjectType: 0
+    time: 31367
+  - hitObjectType: 1
+    time: 32539
+  - hitObjectType: 0
+    time: 33242
+  - hitObjectType: 0
+    time: 34414
+  - hitObjectType: 1
+    time: 35117
+  - hitObjectType: 0
+    time: 36289
+  - hitObjectType: 1
+    time: 36992
+  - hitObjectType: 1
+    time: 37460
+  - hitObjectType: 0
+    time: 38164
+  - hitObjectType: 1
+    time: 38867
+  - hitObjectType: 0
+    time: 40039
+  - hitObjectType: 1
+    time: 40742
+  - hitObjectType: 1
+    time: 41914
+  - hitObjectType: 0
+    time: 42617
+  - hitObjectType: 1
+    time: 43789
+  - hitObjectType: 0
+    time: 44492
+  - hitObjectType: 0
+    time: 44960
+  - hitObjectType: 0
+    time: 45664
+  - hitObjectType: 1
+    time: 46601
+  - hitObjectType: 1
+    time: 46953
+  - hitObjectType: 0
+    time: 47539
+  - hitObjectType: 0
+    time: 48476
+  - hitObjectType: 0
+    time: 48828
+  - hitObjectType: 1
+    time: 49414
+  - hitObjectType: 0
+    time: 50351
+  - hitObjectType: 1
+    time: 50703
+  - hitObjectType: 1
+    time: 51289
+  - hitObjectType: 0
+    time: 51757
+  - hitObjectType: 1
+    time: 52226
+  - hitObjectType: 1
+    time: 52695
+  - hitObjectType: 0
+    time: 53164
+  - hitObjectType: 1
+    time: 54101
+  - hitObjectType: 1
+    time: 54453
+  - hitObjectType: 0
+    time: 55039
+  - hitObjectType: 0
+    time: 55976
+  - hitObjectType: 0
+    time: 56328
+  - hitObjectType: 1
+    time: 56914
+  - hitObjectType: 0
+    time: 57851
+  - hitObjectType: 1
+    time: 58203
+  - hitObjectType: 1
+    time: 58789
+  - hitObjectType: 1
+    time: 59257
+  - hitObjectType: 0
+    time: 59726
+  - hitObjectType: 0
+    time: 60195
+  - hitObjectType: 1
+    time: 60664
+  - hitObjectType: 0
+    time: 61367
+  - hitObjectType: 1
+    time: 62539
+  - hitObjectType: 0
+    time: 63242
+  - hitObjectType: 0
+    time: 63710
+  - hitObjectType: 1
+    time: 64414
+  timingPoints:
+  - Inherited: 0
+    time: 664
+    millisecondsPerBeat: 468.75
+  - Inherited: 1
+    time: 13789
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 15664
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 23046
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 23164
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 30664
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 43789
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 45664
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 53046
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 53164
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 60664
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 64414
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 66289
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 68164
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 70039
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71914
+    millisecondsPerBeat: -100
+  beforePlayDelay: 3
+  approachRate: 10
+  audioClip: {fileID: 8300000, guid: 7aa8f4fdad9b7544fb012374bc571740, type: 3}

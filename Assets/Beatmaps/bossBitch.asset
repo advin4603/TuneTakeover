@@ -1,0 +1,565 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc36cfebd7e2f4eb0f7f0581a0a151, type: 3}
+  m_Name: bossBitch
+  m_EditorClassIdentifier: 
+  initialOffset: 0
+  songTitle: Boss Bitch
+  songArtist: Doja Cat
+  hitObjects:
+  - hitObjectType: 0
+    time: 7706
+  - hitObjectType: 1
+    time: 8182
+  - hitObjectType: 1
+    time: 8658
+  - hitObjectType: 1
+    time: 8896
+  - hitObjectType: 0
+    time: 9134
+  - hitObjectType: 0
+    time: 9610
+  - hitObjectType: 1
+    time: 9848
+  - hitObjectType: 1
+    time: 10086
+  - hitObjectType: 0
+    time: 10563
+  - hitObjectType: 1
+    time: 11039
+  - hitObjectType: 1
+    time: 11515
+  - hitObjectType: 0
+    time: 11991
+  - hitObjectType: 1
+    time: 12467
+  - hitObjectType: 1
+    time: 12706
+  - hitObjectType: 0
+    time: 12944
+  - hitObjectType: 1
+    time: 13420
+  - hitObjectType: 0
+    time: 13896
+  - hitObjectType: 1
+    time: 14372
+  - hitObjectType: 1
+    time: 14610
+  - hitObjectType: 0
+    time: 14848
+  - hitObjectType: 1
+    time: 15325
+  - hitObjectType: 1
+    time: 15801
+  - hitObjectType: 0
+    time: 16277
+  - hitObjectType: 1
+    time: 16753
+  - hitObjectType: 0
+    time: 16991
+  - hitObjectType: 1
+    time: 17229
+  - hitObjectType: 0
+    time: 17706
+  - hitObjectType: 1
+    time: 18182
+  - hitObjectType: 1
+    time: 18658
+  - hitObjectType: 0
+    time: 18896
+  - hitObjectType: 0
+    time: 19134
+  - hitObjectType: 1
+    time: 19610
+  - hitObjectType: 0
+    time: 20086
+  - hitObjectType: 0
+    time: 20325
+  - hitObjectType: 1
+    time: 20563
+  - hitObjectType: 1
+    time: 21039
+  - hitObjectType: 0
+    time: 21991
+  - hitObjectType: 1
+    time: 22706
+  - hitObjectType: 0
+    time: 22944
+  - hitObjectType: 1
+    time: 23420
+  - hitObjectType: 1
+    time: 23658
+  - hitObjectType: 0
+    time: 23896
+  - hitObjectType: 1
+    time: 24372
+  - hitObjectType: 0
+    time: 24848
+  - hitObjectType: 1
+    time: 25086
+  - hitObjectType: 0
+    time: 25325
+  - hitObjectType: 1
+    time: 25801
+  - hitObjectType: 0
+    time: 26277
+  - hitObjectType: 1
+    time: 26753
+  - hitObjectType: 0
+    time: 26991
+  - hitObjectType: 1
+    time: 27229
+  - hitObjectType: 1
+    time: 27467
+  - hitObjectType: 0
+    time: 27706
+  - hitObjectType: 1
+    time: 28182
+  - hitObjectType: 0
+    time: 28658
+  - hitObjectType: 0
+    time: 28896
+  - hitObjectType: 1
+    time: 29134
+  - hitObjectType: 0
+    time: 29610
+  - hitObjectType: 0
+    time: 30563
+  - hitObjectType: 1
+    time: 31039
+  - hitObjectType: 0
+    time: 31515
+  - hitObjectType: 1
+    time: 31753
+  - hitObjectType: 0
+    time: 31991
+  - hitObjectType: 1
+    time: 32467
+  - hitObjectType: 0
+    time: 32944
+  - hitObjectType: 1
+    time: 33420
+  - hitObjectType: 1
+    time: 33658
+  - hitObjectType: 0
+    time: 33896
+  - hitObjectType: 1
+    time: 34372
+  - hitObjectType: 0
+    time: 34848
+  - hitObjectType: 0
+    time: 35325
+  - hitObjectType: 1
+    time: 35563
+  - hitObjectType: 0
+    time: 35801
+  - hitObjectType: 1
+    time: 36277
+  - hitObjectType: 0
+    time: 38182
+  - hitObjectType: 1
+    time: 38658
+  - hitObjectType: 0
+    time: 38896
+  - hitObjectType: 0
+    time: 39134
+  - hitObjectType: 1
+    time: 39610
+  - hitObjectType: 0
+    time: 39848
+  - hitObjectType: 1
+    time: 40086
+  - hitObjectType: 0
+    time: 40563
+  - hitObjectType: 1
+    time: 41039
+  - hitObjectType: 1
+    time: 41277
+  - hitObjectType: 0
+    time: 41515
+  - hitObjectType: 0
+    time: 41753
+  - hitObjectType: 1
+    time: 41991
+  - hitObjectType: 0
+    time: 42467
+  - hitObjectType: 1
+    time: 42706
+  - hitObjectType: 1
+    time: 42944
+  - hitObjectType: 0
+    time: 43420
+  - hitObjectType: 1
+    time: 43896
+  - hitObjectType: 0
+    time: 44372
+  - hitObjectType: 0
+    time: 44610
+  - hitObjectType: 1
+    time: 44848
+  - hitObjectType: 1
+    time: 45086
+  - hitObjectType: 0
+    time: 45325
+  - hitObjectType: 1
+    time: 45801
+  - hitObjectType: 1
+    time: 46753
+  - hitObjectType: 0
+    time: 47229
+  - hitObjectType: 0
+    time: 47467
+  - hitObjectType: 1
+    time: 47706
+  - hitObjectType: 0
+    time: 48182
+  - hitObjectType: 1
+    time: 48658
+  - hitObjectType: 1
+    time: 48896
+  - hitObjectType: 0
+    time: 49134
+  - hitObjectType: 0
+    time: 49372
+  - hitObjectType: 1
+    time: 49610
+  - hitObjectType: 0
+    time: 50086
+  - hitObjectType: 1
+    time: 50325
+  - hitObjectType: 1
+    time: 50563
+  - hitObjectType: 0
+    time: 51039
+  - hitObjectType: 1
+    time: 51515
+  - hitObjectType: 0
+    time: 51991
+  - hitObjectType: 1
+    time: 52467
+  - hitObjectType: 1
+    time: 52706
+  - hitObjectType: 0
+    time: 52944
+  - hitObjectType: 1
+    time: 61039
+  - hitObjectType: 0
+    time: 61515
+  - hitObjectType: 1
+    time: 61753
+  - hitObjectType: 0
+    time: 61991
+  - hitObjectType: 1
+    time: 62467
+  - hitObjectType: 0
+    time: 62944
+  - hitObjectType: 1
+    time: 63420
+  - hitObjectType: 1
+    time: 63658
+  - hitObjectType: 0
+    time: 63896
+  - hitObjectType: 1
+    time: 64372
+  - hitObjectType: 0
+    time: 64848
+  - hitObjectType: 0
+    time: 65325
+  - hitObjectType: 0
+    time: 65563
+  - hitObjectType: 1
+    time: 65801
+  - hitObjectType: 0
+    time: 68658
+  - hitObjectType: 0
+    time: 69134
+  - hitObjectType: 1
+    time: 69610
+  - hitObjectType: 1
+    time: 70086
+  - hitObjectType: 1
+    time: 70325
+  - hitObjectType: 0
+    time: 70563
+  - hitObjectType: 0
+    time: 71039
+  - hitObjectType: 1
+    time: 71515
+  - hitObjectType: 1
+    time: 71991
+  - hitObjectType: 0
+    time: 72229
+  - hitObjectType: 1
+    time: 72467
+  - hitObjectType: 0
+    time: 72944
+  - hitObjectType: 1
+    time: 73420
+  - hitObjectType: 1
+    time: 73896
+  - hitObjectType: 1
+    time: 74134
+  - hitObjectType: 1
+    time: 74610
+  - hitObjectType: 1
+    time: 74848
+  - hitObjectType: 0
+    time: 75325
+  - hitObjectType: 0
+    time: 76277
+  - hitObjectType: 1
+    time: 76753
+  - hitObjectType: 1
+    time: 77229
+  - hitObjectType: 1
+    time: 77706
+  - hitObjectType: 0
+    time: 77944
+  - hitObjectType: 1
+    time: 78182
+  - hitObjectType: 0
+    time: 78658
+  - hitObjectType: 1
+    time: 79134
+  - hitObjectType: 1
+    time: 79610
+  - hitObjectType: 1
+    time: 79848
+  - hitObjectType: 0
+    time: 80086
+  - hitObjectType: 0
+    time: 80563
+  - hitObjectType: 0
+    time: 81039
+  - hitObjectType: 1
+    time: 81277
+  - hitObjectType: 1
+    time: 81515
+  - hitObjectType: 0
+    time: 81991
+  - hitObjectType: 0
+    time: 82944
+  - hitObjectType: 0
+    time: 83420
+  - hitObjectType: 1
+    time: 83896
+  - hitObjectType: 1
+    time: 84372
+  - hitObjectType: 1
+    time: 84610
+  - hitObjectType: 0
+    time: 84848
+  - hitObjectType: 0
+    time: 85325
+  - hitObjectType: 0
+    time: 85563
+  - hitObjectType: 1
+    time: 85801
+  - hitObjectType: 0
+    time: 86277
+  - hitObjectType: 1
+    time: 86753
+  - hitObjectType: 1
+    time: 86991
+  - hitObjectType: 0
+    time: 87229
+  - hitObjectType: 1
+    time: 87467
+  - hitObjectType: 1
+    time: 87706
+  - hitObjectType: 0
+    time: 88182
+  - hitObjectType: 1
+    time: 88658
+  - hitObjectType: 0
+    time: 89134
+  - hitObjectType: 1
+    time: 89610
+  - hitObjectType: 1
+    time: 89848
+  - hitObjectType: 0
+    time: 90086
+  - hitObjectType: 0
+    time: 90325
+  - hitObjectType: 1
+    time: 90563
+  - hitObjectType: 0
+    time: 91039
+  - hitObjectType: 1
+    time: 91515
+  - hitObjectType: 0
+    time: 92467
+  - hitObjectType: 1
+    time: 92944
+  - hitObjectType: 1
+    time: 93420
+  - hitObjectType: 0
+    time: 93658
+  - hitObjectType: 1
+    time: 93896
+  - hitObjectType: 1
+    time: 94372
+  - hitObjectType: 1
+    time: 94610
+  - hitObjectType: 1
+    time: 94848
+  - hitObjectType: 1
+    time: 95086
+  - hitObjectType: 0
+    time: 95325
+  - hitObjectType: 0
+    time: 95801
+  - hitObjectType: 1
+    time: 96277
+  - hitObjectType: 0
+    time: 96515
+  - hitObjectType: 1
+    time: 96753
+  - hitObjectType: 1
+    time: 106753
+  - hitObjectType: 0
+    time: 107229
+  - hitObjectType: 1
+    time: 107706
+  - hitObjectType: 1
+    time: 108182
+  - hitObjectType: 1
+    time: 108420
+  - hitObjectType: 0
+    time: 108658
+  - hitObjectType: 1
+    time: 110563
+  - hitObjectType: 0
+    time: 111039
+  - hitObjectType: 1
+    time: 111515
+  - hitObjectType: 0
+    time: 111991
+  - hitObjectType: 0
+    time: 112229
+  - hitObjectType: 1
+    time: 112467
+  - hitObjectType: 1
+    time: 114372
+  - hitObjectType: 1
+    time: 114848
+  - hitObjectType: 1
+    time: 115086
+  - hitObjectType: 0
+    time: 115325
+  - hitObjectType: 0
+    time: 115801
+  - hitObjectType: 0
+    time: 116039
+  - hitObjectType: 1
+    time: 116277
+  - hitObjectType: 0
+    time: 116515
+  - hitObjectType: 0
+    time: 116753
+  - hitObjectType: 1
+    time: 117229
+  - hitObjectType: 1
+    time: 117467
+  - hitObjectType: 0
+    time: 117706
+  - hitObjectType: 0
+    time: 118182
+  - hitObjectType: 1
+    time: 118658
+  - hitObjectType: 0
+    time: 118896
+  - hitObjectType: 1
+    time: 119134
+  - hitObjectType: 0
+    time: 119610
+  - hitObjectType: 1
+    time: 120086
+  - hitObjectType: 0
+    time: 120563
+  - hitObjectType: 1
+    time: 120801
+  - hitObjectType: 1
+    time: 121039
+  - hitObjectType: 1
+    time: 121277
+  - hitObjectType: 0
+    time: 121515
+  - hitObjectType: 1
+    time: 121991
+  - hitObjectType: 1
+    time: 122944
+  - hitObjectType: 1
+    time: 123420
+  - hitObjectType: 1
+    time: 123896
+  - hitObjectType: 0
+    time: 124134
+  - hitObjectType: 1
+    time: 124372
+  - hitObjectType: 1
+    time: 124848
+  - hitObjectType: 1
+    time: 125086
+  - hitObjectType: 1
+    time: 125325
+  - hitObjectType: 1
+    time: 125563
+  - hitObjectType: 0
+    time: 125801
+  - hitObjectType: 1
+    time: 126277
+  - hitObjectType: 1
+    time: 126753
+  - hitObjectType: 1
+    time: 127229
+  - hitObjectType: 1
+    time: 127467
+  - hitObjectType: 0
+    time: 127706
+  timingPoints:
+  - Inherited: 0
+    time: 87
+    millisecondsPerBeat: 476.190476190476
+  - Inherited: 1
+    time: 7706
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 22944
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 38182
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 53182
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 61039
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 68658
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 83896
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 98896
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 114372
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 129372
+    millisecondsPerBeat: -100
+  beforePlayDelay: 0
+  approachRate: 10
+  audioClip: {fileID: 8300000, guid: 42caf2b49efc2db40a4c102ab72d843d, type: 3}

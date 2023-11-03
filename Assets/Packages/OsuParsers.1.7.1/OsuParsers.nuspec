@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>    
+    <id>OsuParsers</id>
+    <version>1.7.1</version>
+    <title>OsuParsers</title>
+    <authors>mrflashstudio</authors>
+    <owners>mrflashstudio</owners>
+    <projectUrl>https://github.com/mrflashstudio/OsuParsers</projectUrl>
+    <repository type="git" url="https://github.com/mrflashstudio/OsuParsers" />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>OsuParsers is a tool that parses and writes beatmaps, replays, storyboards, databases of the game called osu!.</description>
+    <releaseNotes>Changed the way how TimingPoint.Inherited is decoded/encoded. It's now in line with osu! documentation. 
+Beatmap.Length is now represented in milliseconds instead of seconds. 
+For more detailed changelog check out the github releases page! https://github.com/mrflashstudio/OsuParsers/releases/latest
+</releaseNotes>
+    <copyright>Copyright 2021.</copyright>
+    <tags>osu parser beatmap storyboard database</tags>
+    <summary>OsuParsers - Library for parsing/writing files associated with osu!</summary>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Numerics.Vectors" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,76 @@
+{
+    "name": "PlayerActions",
+    "maps": [
+        {
+            "name": "AttackDefendMap",
+            "id": "b0cbcc99-aacf-4292-9062-9cf09da73cd3",
+            "actions": [
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "c9e81eb9-aebb-4ec3-9868-7b053108fd8c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Defend",
+                    "type": "Button",
+                    "id": "65edcea2-b1a1-46ad-9217-1684455bc851",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "acc17e24-b3d5-40d9-9b78-14d744f69371",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f795b57-73bd-4e6e-a7ff-bf57186184f2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4d5b578-9096-44b9-ba6b-d29c8e2ace03",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Defend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d95fce48-df22-4f26-bb54-98984d5f287b",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Defend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
