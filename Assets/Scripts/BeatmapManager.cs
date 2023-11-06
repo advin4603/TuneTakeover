@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class BeatmapManager : MonoBehaviour
 {
     public SongBeatmap currentPlayingBeatmap;
+    public Conductor conductorScript;
 
     public delegate void PlayDelegate();
     public PlayDelegate OnPlay;
@@ -17,6 +19,7 @@ public class BeatmapManager : MonoBehaviour
     public BeforeStartPlayDelegate OnBeforeStartPlay;
 
     public bool playing = false;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -42,4 +45,5 @@ public class BeatmapManager : MonoBehaviour
         playing = false;
         OnPause?.Invoke();
     }
+    
 }

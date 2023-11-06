@@ -178,6 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6361734125737740441}
   - component: {fileID: 1231402806378551988}
+  - component: {fileID: 5809573950384733772}
   m_Layer: 0
   m_Name: AttackHitObject
   m_TagString: Untagged
@@ -254,3 +255,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5809573950384733772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205642758500389058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb1391d724696ae4393f6c854dc61242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHit: 0
+  fadeOutSpeed: 5
+  fadeOutCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleOutCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.008086991
+      value: 1.8831693
+      inSlope: 0.001035641
+      outSlope: 0.001035641
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.042479135
+    - serializedVersion: 3
+      time: 0.9808783
+      value: 0.10620737
+      inSlope: -7.0511055
+      outSlope: -7.0511055
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.017631197
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 46.742306
+      outSlope: 46.742306
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

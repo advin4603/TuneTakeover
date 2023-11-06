@@ -14,7 +14,7 @@ public class SpriteAnimationSync : MonoBehaviour
     public AnimatorStateInfo animatorStateInfo;
 
 //Used to address the current state within the Animator using the Play() function
-    public int currentState;
+    public int idleState;
 
     // Start is called before the first frame update
     void Start()
@@ -27,16 +27,15 @@ public class SpriteAnimationSync : MonoBehaviour
         animatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
 
         //Convert the current state name to an integer hash for identification
-        currentState = animatorStateInfo.fullPathHash;
+        idleState = animatorStateInfo.fullPathHash;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float positionInBeats = conductor.songPositionInBeats; 
+        float positionInBeats = conductor.songPositionInBeats;
         if (positionInBeats >= 0)
-            
-            _animator.Play(currentState, -1, positionInBeats - (int)positionInBeats);
-        _animator.speed = 0;
+            _animator.Play(idleState, -1, positionInBeats - (int)positionInBeats);
+        
     }
 }

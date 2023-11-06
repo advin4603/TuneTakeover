@@ -12,6 +12,7 @@ using System.IO.Compression;
 using OsuParsers.Beatmaps.Objects.Taiko;
 using OsuParsers.Decoders;
 using OsuParsers.Enums.Beatmaps;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 
@@ -30,6 +31,7 @@ public class SongBeatmap : ScriptableObject
 
         public SongHitObjectType hitObjectType;
         public float time;
+        public List<string> hitObjectEvent;
     }
 
     [Serializable]
@@ -47,6 +49,8 @@ public class SongBeatmap : ScriptableObject
     public List<SongTimingPoint> timingPoints;
     public float beforePlayDelay;
     public float approachRate;
+
+    public List<string> commonHitObjectEvent = new List<string>();
 
     public AudioClip audioClip;
 
