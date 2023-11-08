@@ -28,8 +28,40 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
     public int earlyForgivenessTimeMilliseconds;
     public int despawnDelayMilliseconds;
 
+    public delegate void UnneccessaryAttackDelegate();
+
+    public UnneccessaryAttackDelegate OnUneccessaryAttack;
+    
+    
+    public delegate void UnneccessaryDefendDelegate();
+
+    public UnneccessaryDefendDelegate OnUneccessaryDefend;
+
+    public delegate void MissedDefendDelegate();
+
+    public MissedDefendDelegate OnMissedDefend;
+    
+    public delegate void MissedAttackDelegate();
+
+    public MissedAttackDelegate OnMissedAttack;
+
+    public delegate void SuccessfulAttackDelegate(float hitOffsetNormalised);
+
+    public SuccessfulAttackDelegate OnSuccessfulAttack;
+
+    public delegate void SuccessfulDefendDelegate(float hitOffsetNormalised);
+
+    public SuccessfulDefendDelegate OnSuccessfulDefend;
+
+
     private void Attack(InputAction.CallbackContext _)
     {
+        if (attackHitObjects.Count == 0)
+        {
+            UnnecessaryAttack();
+            return;
+        }
+            
         var trackingHitObjectTime = attackHitObjects[attackHitObjects.Count - 1].Item2;
         var songPosition = conductorScript.songPosition * 1000;
         if (songPosition <= trackingHitObjectTime &&
@@ -38,6 +70,7 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
             // Early but ok
             attackHitObjects[attackHitObjects.Count - 1].Item3.Hit();
             attackHitObjects.RemoveAt(attackHitObjects.Count - 1);
+            SuccessfulAttack((songPosition - trackingHitObjectTime) / earlyForgivenessTimeMilliseconds);
             return;
         }
 
@@ -47,6 +80,7 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
             // Late but ok
             attackHitObjects[attackHitObjects.Count - 1].Item3.Hit();
             attackHitObjects.RemoveAt(attackHitObjects.Count - 1);
+            SuccessfulAttack((songPosition - trackingHitObjectTime) / lateForgivenessTimeMilliseconds);
             return;
         }
 
@@ -55,6 +89,12 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
 
     private void Defend(InputAction.CallbackContext _)
     {
+        if (defendHitObjects.Count == 0)
+        {
+            UnnecessaryDefend();
+            return;
+        }
+            
         var trackingHitObjectTime = defendHitObjects[defendHitObjects.Count - 1].Item2;
         var songPosition = conductorScript.songPosition * 1000;
         if (songPosition <= trackingHitObjectTime &&
@@ -63,6 +103,7 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
             // Early but ok
             defendHitObjects[defendHitObjects.Count - 1].Item3.Hit();
             defendHitObjects.RemoveAt(defendHitObjects.Count - 1);
+            SuccessfulDefend((songPosition - trackingHitObjectTime) / earlyForgivenessTimeMilliseconds);
             return;
         }
 
@@ -72,18 +113,42 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
             // Late but ok
             defendHitObjects[defendHitObjects.Count - 1].Item3.Hit();
             defendHitObjects.RemoveAt(defendHitObjects.Count - 1);
+            SuccessfulDefend((songPosition - trackingHitObjectTime) / lateForgivenessTimeMilliseconds);
             return;
         }
 
         UnnecessaryDefend();
     }
 
+    void SuccessfulAttack(float hitOffsetNormalised)
+    {
+        OnSuccessfulAttack?.Invoke(hitOffsetNormalised);
+    }
+
+    void SuccessfulDefend(float hitOffsetNormalised)
+    {
+        OnSuccessfulDefend?.Invoke(hitOffsetNormalised);
+    }
+
+
     void UnnecessaryAttack()
     {
+        OnUneccessaryAttack?.Invoke();
     }
 
     void UnnecessaryDefend()
     {
+        OnUneccessaryDefend?.Invoke();
+    }
+
+    void MissedDefend()
+    {
+        OnMissedDefend?.Invoke();
+    }
+
+    void MissedAttack()
+    {
+        OnMissedAttack?.Invoke();
     }
 
     private void OnEnable()
@@ -137,17 +202,19 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
     private void Update()
     {
         var songPosition = conductorScript.songPosition * 1000;
-        while (attackHitObjects.Count > 0 && songPosition - lateForgivenessTimeMilliseconds - despawnDelayMilliseconds >
+        while (attackHitObjects.Count > 0 && songPosition - lateForgivenessTimeMilliseconds >
                attackHitObjects[attackHitObjects.Count - 1].Item2)
         {
-            Destroy(attackHitObjects[attackHitObjects.Count - 1].Item1);
+            MissedAttack();
+            Destroy(attackHitObjects[attackHitObjects.Count - 1].Item1, despawnDelayMilliseconds/1000f);
             attackHitObjects.RemoveAt(attackHitObjects.Count - 1);
         }
 
-        while (defendHitObjects.Count > 0 && songPosition - lateForgivenessTimeMilliseconds - despawnDelayMilliseconds >
+        while (defendHitObjects.Count > 0 && songPosition - lateForgivenessTimeMilliseconds >
                defendHitObjects[defendHitObjects.Count - 1].Item2)
         {
-            Destroy(defendHitObjects[defendHitObjects.Count - 1].Item1);
+            MissedDefend();
+            Destroy(defendHitObjects[defendHitObjects.Count - 1].Item1, despawnDelayMilliseconds/1000f);
             defendHitObjects.RemoveAt(defendHitObjects.Count - 1);
         }
     }

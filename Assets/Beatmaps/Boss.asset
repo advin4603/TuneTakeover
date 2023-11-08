@@ -1,0 +1,672 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc36cfebd7e2f4eb0f7f0581a0a151, type: 3}
+  m_Name: Boss
+  m_EditorClassIdentifier: 
+  initialOffset: 0
+  songTitle: Boss
+  songArtist: Lil Pump
+  hitObjects:
+  - hitObjectType: 0
+    time: 8028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 8278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 8528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 9028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 9528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 10028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 10278
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 10528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 12028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 12278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 12528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 13028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 13528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 15028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 15528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 16028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 16278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 16528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 17028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 17528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 18028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 18278
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 18528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 20028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 20278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 20528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 21028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 21528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 23028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 23528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 24028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 24528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 24778
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 25028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 25528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 27528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 28028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 28528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 28778
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 29028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 29528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 31528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 32028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 32278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 32528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 33028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 33528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 35528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 36028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 36278
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 36528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 37028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 37528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 38028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 38278
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 38528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 39028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 39528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 40028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 41028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 41528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 42028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 42278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 42528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 42778
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 43028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 44028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 44278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 44528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 45028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 45528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 47028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 47528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 48028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 48528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 48778
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 49028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 49278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 49528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 51278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 51528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 52028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 53028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 53278
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 53528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 54028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 54528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 54778
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 55028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 55278
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 55528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 56028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 57028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 57278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 57528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 58028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 60028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 60528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 60778
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 61028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 61278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 61528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 62028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 64028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 64528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 64778
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 65028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 65528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 66028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 66278
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 66528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 67028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 67528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 68028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 68528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 68778
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 69028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 69528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 71528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 72028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 72278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 72528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 73028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 73528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 74028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 74278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 74528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 75028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 75528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 76028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 76278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 76528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 77028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 77528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 78028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 78278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 78528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 79028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 80028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 80278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 80528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 81028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 81528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 82028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 82278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 82528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 83028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 83528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 84028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 84278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 84528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 85028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 85528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 86028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 86278
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 86528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 87028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 87528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 88028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 89028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 89528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 90528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 91028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 91528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 92028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 93028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 93528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 94528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 95028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 95528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 96028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 97028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 97528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 98528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 99028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 99528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 100028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 101028
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 101528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 102528
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 103028
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 103528
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 104028
+    hitObjectEvent: []
+  timingPoints:
+  - Inherited: 0
+    time: 28
+    millisecondsPerBeat: 500
+  - Inherited: 1
+    time: 11028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 12028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 14028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 15028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 19028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 20028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 22028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 23028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 26028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 27528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 30028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 31528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 34028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 35528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 43528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 44028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 46028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 47028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 50028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 51278
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 58528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 60028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 62528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 64028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 70028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 71528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 88028
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104278
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104528
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 104840
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 105121
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 105486
+    millisecondsPerBeat: -100
+  beforePlayDelay: 0
+  approachRate: 4.5
+  commonHitObjectEvent:
+  - Enemy Beat Action
+  audioClip: {fileID: 8300000, guid: bf888540ca4819341bb0ad394aa47745, type: 3}

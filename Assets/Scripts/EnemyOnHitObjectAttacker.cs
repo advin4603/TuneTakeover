@@ -6,6 +6,22 @@ using UnityEngine;
 public class EnemyOnHitObjectAttacker : MonoBehaviour
 {
     private AttackDefendInvoker _attackDefendInvoker;
+    public HitObjectsSpawnerDespawner hitObjectsSpawnerDespawner;
+
+    void DefendOnUnnecessaryAttack()
+    {
+        _attackDefendInvoker.Defend();
+    }
+    
+    private void OnEnable()
+    {
+        hitObjectsSpawnerDespawner.OnUneccessaryAttack += DefendOnUnnecessaryAttack;
+    }
+
+    private void OnDisable()
+    {
+        hitObjectsSpawnerDespawner.OnUneccessaryAttack -= DefendOnUnnecessaryAttack;
+    }
 
     private void Start()
     {

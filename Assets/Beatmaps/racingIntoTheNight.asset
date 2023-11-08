@@ -6535,5 +6535,6 @@ MonoBehaviour:
     millisecondsPerBeat: -90.9090909090909
   beforePlayDelay: 5
   approachRate: 9.9
-  commonHitObjectEvent: []
+  commonHitObjectEvent:
+  - Enemy Beat Action
   audioClip: {fileID: 8300000, guid: f06359e55e4b9564c925479311d41f38, type: 3}
