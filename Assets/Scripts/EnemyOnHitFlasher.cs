@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ColorFlash))]
 public class EnemyOnHitFlasher : MonoBehaviour
 {
-    public HitObjectsSpawnerDespawner hitObjectsSpawnerDespawner;
     private ColorFlash _colorFlash;
     // Start is called before the first frame update
 
@@ -15,11 +15,11 @@ public class EnemyOnHitFlasher : MonoBehaviour
     private void OnEnable()
     {
         _colorFlash = GetComponent<ColorFlash>();
-        hitObjectsSpawnerDespawner.OnSuccessfulAttack += Flash;
+        HitObjectsSpawnerDespawner.Instance.OnSuccessfulAttack += Flash;
     }
 
     private void OnDisable()
     {
-        hitObjectsSpawnerDespawner.OnSuccessfulAttack -= Flash;
+        HitObjectsSpawnerDespawner.Instance.OnSuccessfulAttack -= Flash;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class HitObjectDespawner : MonoBehaviour
 {
     public bool isHit;
@@ -47,7 +48,7 @@ public class HitObjectDespawner : MonoBehaviour
         if (t <= 0)
         {
             impendingDoom = true;
-            Destroy(this.gameObject, 1f/fadeOutSpeed);
+            Destroy(gameObject, 1f/fadeOutSpeed);
         }
             
     }

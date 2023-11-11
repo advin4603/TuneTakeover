@@ -168,7 +168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: 1
   defend: 1
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
 --- !u!199 &156672694
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5032,12 +5031,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutoff: 800
   count: 1024
-  leftColor: {r: 0.6886792, g: 0, b: 0, a: 0.6666667}
-  rightColor: {r: 0.061202753, g: 0.7830189, b: 0, a: 0.6666667}
+  leftColor: {r: 0, g: 0.6901961, b: 0.030129796, a: 0.6666667}
+  rightColor: {r: 0.78431374, g: 0.058393773, b: 0, a: 0.6666667}
   VisualiserBar: {fileID: 589546078915776316, guid: 4d8dd99abc4cd6942b734130087a30d8, type: 3}
-  audioSource: {fileID: 1572864503}
   healthSlider: {fileID: 607017698}
-  spectrumScale: 2
+  spectrumScale: 0.5
 --- !u!1 &457392119
 GameObject:
   m_ObjectHideFlags: 0
@@ -5082,8 +5080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84082aea1c42ce745b5364215d082554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPlayingBeatmap: {fileID: 11400000, guid: 2f937b9337a1b1c4899cbe9b4295ceeb, type: 2}
-  conductorScript: {fileID: 1572864504}
+  currentPlayingBeatmap: {fileID: 11400000, guid: e24b364e40b0074438bc6488ef57a62d, type: 2}
   playing: 0
 --- !u!1 &562947138
 GameObject:
@@ -5236,8 +5233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d483c2bb4a6189a40b198f86a510374a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
-  beatmapManager: {fileID: 457392122}
 --- !u!1 &686723941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5326,8 +5321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d6a0f09e9aad4498b4cb01840c20d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conductor: {fileID: 1572864504}
-  beatmapManager: {fileID: 457392122}
   pulseFactor: 1.5
   pulseSpeed: 5
 --- !u!1 &704840861
@@ -5459,9 +5452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e2f7cd7b94244439bc0b81089352ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatmapManager: {fileID: 457392122}
-  conductor: {fileID: 1572864504}
-  idleState: 0
 --- !u!114 &704840866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5519,7 +5509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c056cac0b981940ae2b2282d28bb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
 --- !u!114 &704840870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5789,74 +5778,6 @@ Transform:
   - {fileID: 1572864505}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 9.693, y: 0, z: 0}
---- !u!1 &1149872132
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1149872135}
-  - component: {fileID: 1149872134}
-  - component: {fileID: 1149872133}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1149872133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149872132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1149872134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149872132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1149872135
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149872132}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1185663456
 GameObject:
   m_ObjectHideFlags: 0
@@ -10718,7 +10639,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: 1
   defend: 0
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
 --- !u!1 &1248319135
 GameObject:
   m_ObjectHideFlags: 0
@@ -10839,7 +10759,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: 0
   defend: 1
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
 --- !u!198 &1248319139
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -15678,8 +15597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d6a0f09e9aad4498b4cb01840c20d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conductor: {fileID: 1572864504}
-  beatmapManager: {fileID: 457392122}
   pulseFactor: 1.2
   pulseSpeed: 10
 --- !u!1 &1311378641
@@ -15805,8 +15722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6869a821ae5c844a83a1a98136a757b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conductorScript: {fileID: 1572864504}
-  beatmapManager: {fileID: 457392122}
   eventMap:
   - eventName: Enemy Beat Action
     eventAction:
@@ -20698,7 +20613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ae80fc1c52ef24e98e2df52188da10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
   successWindow: {x: 0.1, y: 1}
 --- !u!1 &1572864502
 GameObject:
@@ -20826,8 +20740,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d966d717c68df4ab2b1c6868c3497b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songSource: {fileID: 1572864503}
-  beatmapManager: {fileID: 457392122}
 --- !u!4 &1572864505
 Transform:
   m_ObjectHideFlags: 0
@@ -20929,7 +20841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05680283, g: 0.6792453, b: 0, a: 1}
+  m_Color: {r: 0.6784314, g: 0.03897998, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21004,7 +20916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8301887, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.116261736, g: 0.8301887, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25888,7 +25800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ae80fc1c52ef24e98e2df52188da10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
   successWindow: {x: 0, y: 0.1}
 --- !u!1 &2031987746
 GameObject:
@@ -25920,9 +25831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7976e7e1db8ec8a4f87ed30f83bdc7af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conductorScript: {fileID: 1572864504}
-  beatmapManagerScript: {fileID: 457392122}
-  initialPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &2031987748
 Transform:
   m_ObjectHideFlags: 0
@@ -25950,12 +25858,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8256f0244607caf47af2e7318ceeef4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conductorScript: {fileID: 1572864504}
   attackHitObject: {fileID: 4205642758500389058, guid: bf555c3a7bc00ac4d82e06022d250dbe, type: 3}
   defendHitObject: {fileID: 4205642758500389058, guid: 00ffa99581edbb740bd55c518a68db5a, type: 3}
   attackActionReference: {fileID: 7656791754213093821, guid: 6e9695a7ce1043e4cab5356a91b91ca7, type: 3}
   defendActionReference: {fileID: -1393855688529159946, guid: 6e9695a7ce1043e4cab5356a91b91ca7, type: 3}
-  beatmapManagerScript: {fileID: 457392122}
   lateForgivenessTimeMilliseconds: 100
   earlyForgivenessTimeMilliseconds: 100
   despawnDelayMilliseconds: 200
@@ -26086,9 +25992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e2f7cd7b94244439bc0b81089352ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatmapManager: {fileID: 457392122}
-  conductor: {fileID: 1572864504}
-  idleState: 0
 --- !u!114 &2119907110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26132,7 +26035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c005129b13dbe94e894cbbc91ba2ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
 --- !u!114 &2119907113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26183,7 +26085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd624a04cfd5aa4daf46de004913f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitObjectsSpawnerDespawner: {fileID: 2031987749}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -26195,4 +26096,3 @@ SceneRoots:
   - {fileID: 2119907108}
   - {fileID: 1311378643}
   - {fileID: 904733540}
-  - {fileID: 1149872135}

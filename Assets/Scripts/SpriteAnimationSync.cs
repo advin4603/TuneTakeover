@@ -2,24 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class SpriteAnimationSync : MonoBehaviour
 {
     private Animator _animator;
-
-    public BeatmapManager beatmapManager;
-
-    public Conductor conductor;
+    
 
     //Records the animation state or animation that the Animator is currently in
-    public AnimatorStateInfo animatorStateInfo;
+    AnimatorStateInfo animatorStateInfo;
 
 //Used to address the current state within the Animator using the Play() function
-    public int idleState;
+    int idleState;
 
     // Start is called before the first frame update
     void Start()
     {
-        _animator = GetComponent<Animator>();
         //Load the animator attached to this object
         _animator = GetComponent<Animator>();
 
@@ -33,7 +30,7 @@ public class SpriteAnimationSync : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float positionInBeats = conductor.songPositionInBeats;
+        float positionInBeats = Conductor.Instance.songPositionInBeats;
         if (positionInBeats >= 0)
             _animator.Play(idleState, -1, positionInBeats - (int)positionInBeats);
         

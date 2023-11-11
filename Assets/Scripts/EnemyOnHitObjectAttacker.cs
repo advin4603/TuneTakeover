@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(EnemyOnHitObjectAttacker))]
 public class EnemyOnHitObjectAttacker : MonoBehaviour
 {
     private AttackDefendInvoker _attackDefendInvoker;
-    public HitObjectsSpawnerDespawner hitObjectsSpawnerDespawner;
 
     void DefendOnUnnecessaryAttack()
     {
@@ -15,12 +15,12 @@ public class EnemyOnHitObjectAttacker : MonoBehaviour
     
     private void OnEnable()
     {
-        hitObjectsSpawnerDespawner.OnUneccessaryAttack += DefendOnUnnecessaryAttack;
+        HitObjectsSpawnerDespawner.Instance.OnUneccessaryAttack += DefendOnUnnecessaryAttack;
     }
 
     private void OnDisable()
     {
-        hitObjectsSpawnerDespawner.OnUneccessaryAttack -= DefendOnUnnecessaryAttack;
+        HitObjectsSpawnerDespawner.Instance.OnUneccessaryAttack -= DefendOnUnnecessaryAttack;
     }
 
     private void Start()

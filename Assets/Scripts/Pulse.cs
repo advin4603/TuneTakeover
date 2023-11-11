@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Pulse : MonoBehaviour
 {
-    public Conductor conductor;
-    public BeatmapManager beatmapManager;
     public float pulseFactor;
 
     private int previousBeat = -1;
@@ -24,9 +22,9 @@ public class Pulse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (conductor.songPositionInBeats >= 0)
+        if (Conductor.Instance.songPositionInBeats >= 0)
         {
-            int new_beat = (int)conductor.songPositionInBeats;
+            int new_beat = (int)Conductor.Instance.songPositionInBeats;
             if (previousBeat != new_beat)
                 t = 1;
             previousBeat = new_beat;
@@ -34,7 +32,7 @@ public class Pulse : MonoBehaviour
 
         transform.localScale = Vector3.Lerp(originalScale, originalScale * pulseFactor, t);
         t -= Time.deltaTime * pulseSpeed *
-             (float)beatmapManager.currentPlayingBeatmap.SecondsPerBeatAt((int)(conductor.songPosition * 1000));
+             (float)BeatmapManager.Instance.currentPlayingBeatmap.SecondsPerBeatAt((int)(Conductor.Instance.songPosition * 1000));
     }
     
 }

@@ -5,11 +5,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
+[RequireComponent(typeof(AudioSource))]
 public class Conductor : MonoBehaviour
 {
-    public AudioSource songSource;
+    public AudioSource songSource { get; private set; }
 
-    public BeatmapManager beatmapManager;
 
     private double initialDspOffset;
 
@@ -17,13 +17,14 @@ public class Conductor : MonoBehaviour
     {
         get
         {
-            if (!beatmapManager.playing)
+            if (!BeatmapManager.Instance.playing)
                 return 0;
             var position = (float)songSource.timeSamples / (songSource.clip.frequency);
-            if (AudioSettings.dspTime - initialDspOffset < beatmapManager.currentPlayingBeatmap.beforePlayDelay)
+            if (AudioSettings.dspTime - initialDspOffset <
+                BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay)
             {
                 position = (float)(AudioSettings.dspTime - initialDspOffset) -
-                           beatmapManager.currentPlayingBeatmap.beforePlayDelay;
+                           BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay;
                 position *= songSource.pitch;
             }
 
@@ -35,34 +36,55 @@ public class Conductor : MonoBehaviour
     {
         get
         {
-            return (songPosition - (float)beatmapManager.currentPlayingBeatmap.initialOffset) /
-                   (float)beatmapManager.currentPlayingBeatmap.SecondsPerBeatAt((int)(songPosition * 1000));
+            return (songPosition - (float)BeatmapManager.Instance.currentPlayingBeatmap.initialOffset) /
+                   (float)BeatmapManager.Instance.currentPlayingBeatmap.SecondsPerBeatAt((int)(songPosition * 1000));
         }
+    }
+
+    public static Conductor Instance { get; private set; }
+
+    void InitialiseSingleton()
+    {
+        if (Instance != null)
+        {
+            Destroy(Instance);
+            Instance = null;
+        }
+
+        Instance = this;
+    }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void OnEnable()
+    {
+        InitialiseSingleton();
+
+        songSource = GetComponent<AudioSource>();
+        BeatmapManager.Instance.OnPlay += StartSong;
+        BeatmapManager.Instance.OnPause += PauseSong;
+    }
+
+    private void OnDisable()
+    {
+        
+        BeatmapManager.Instance.OnPlay -= StartSong;
+        BeatmapManager.Instance.OnPause -= PauseSong;
     }
 
     void StartSong()
     {
         initialDspOffset = (float)AudioSettings.dspTime;
-        songSource.clip = beatmapManager.currentPlayingBeatmap.audioClip;
+        songSource.clip = BeatmapManager.Instance.currentPlayingBeatmap.audioClip;
 
-        songSource.PlayScheduled(initialDspOffset + beatmapManager.currentPlayingBeatmap.beforePlayDelay);
+        songSource.PlayScheduled(initialDspOffset + BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay);
     }
 
     void PauseSong()
     {
         songSource.Pause();
-    }
-
-    private void OnEnable()
-    {
-        songSource = GetComponent<AudioSource>();
-        beatmapManager.OnPlay += StartSong;
-        beatmapManager.OnPause += PauseSong;
-    }
-
-    private void OnDisable()
-    {
-        beatmapManager.OnPlay -= StartSong;
-        beatmapManager.OnPause -= PauseSong;
     }
 }

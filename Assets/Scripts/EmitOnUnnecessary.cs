@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(ParticleSystem))]
 public class EmitOnUnnecessary : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -9,7 +11,6 @@ public class EmitOnUnnecessary : MonoBehaviour
     public bool defend;
 
     private ParticleSystem _particleSystem;
-    public HitObjectsSpawnerDespawner hitObjectsSpawnerDespawner;
 
     void Emit()
     {
@@ -20,16 +21,17 @@ public class EmitOnUnnecessary : MonoBehaviour
     {
         _particleSystem = GetComponent<ParticleSystem>();
         if (attack)
-            hitObjectsSpawnerDespawner.OnUneccessaryAttack += Emit;
+            HitObjectsSpawnerDespawner.Instance.OnUneccessaryAttack += Emit;
         if (defend)
-            hitObjectsSpawnerDespawner.OnUneccessaryDefend += Emit;
+            HitObjectsSpawnerDespawner.Instance.OnUneccessaryDefend += Emit;
     }
 
     private void OnDisable()
     {
+        if (HitObjectsSpawnerDespawner.Instance == null) return;
         if (attack)
-            hitObjectsSpawnerDespawner.OnUneccessaryAttack -= Emit;
+            HitObjectsSpawnerDespawner.Instance.OnUneccessaryAttack -= Emit;
         if (defend)
-            hitObjectsSpawnerDespawner.OnUneccessaryDefend -= Emit;
+            HitObjectsSpawnerDespawner.Instance.OnUneccessaryDefend -= Emit;
     }
 }

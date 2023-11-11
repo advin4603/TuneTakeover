@@ -6,9 +6,6 @@ using UnityEngine.Events;
 
 public class BeatmapEventsManager : MonoBehaviour
 {
-    public Conductor conductorScript;
-
-    public BeatmapManager beatmapManager;
 
     [Serializable]
     public class EventMapping
@@ -21,6 +18,28 @@ public class BeatmapEventsManager : MonoBehaviour
     public Dictionary<string, UnityEvent<SongBeatmap.SongHitObject>> eventMapDict;
 
     private int nextEvent = 0;
+
+    public static BeatmapEventsManager Instance { get; private set; }
+    
+    void InitialiseSingleton()
+    {
+        if (Instance != null)
+        {
+            Destroy(Instance);
+            Instance = null;
+        }
+        Instance = this;
+    }
+    private void Awake()
+    {
+        InitialiseSingleton();
+    }
+
+    private void OnEnable()
+    {
+        Instance = this;
+    }
+
 
     private void Start()
     {
@@ -35,12 +54,12 @@ public class BeatmapEventsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var songPosition = conductorScript.songPosition * 1000;
-        while (nextEvent < beatmapManager.currentPlayingBeatmap.hitObjects.Count &&
-               beatmapManager.currentPlayingBeatmap.hitObjects[nextEvent].time < songPosition)
+        var songPosition = Conductor.Instance.songPosition * 1000;
+        while (nextEvent < BeatmapManager.Instance.currentPlayingBeatmap.hitObjects.Count &&
+               BeatmapManager.Instance.currentPlayingBeatmap.hitObjects[nextEvent].time < songPosition)
         {
-            var hitObject = beatmapManager.currentPlayingBeatmap.hitObjects[nextEvent++];
-            foreach (var eventName in beatmapManager.currentPlayingBeatmap.commonHitObjectEvent)
+            var hitObject = BeatmapManager.Instance.currentPlayingBeatmap.hitObjects[nextEvent++];
+            foreach (var eventName in BeatmapManager.Instance.currentPlayingBeatmap.commonHitObjectEvent)
             {
                 eventMapDict[eventName]?.Invoke(hitObject);
             }

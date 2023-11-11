@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ColorFlash))]
 public class PlayerOnHitColorFlasher : MonoBehaviour
 {
-    public HitObjectsSpawnerDespawner hitObjectsSpawnerDespawner;
     private ColorFlash _colorFlash;
     // Start is called before the first frame update
 
@@ -13,14 +13,16 @@ public class PlayerOnHitColorFlasher : MonoBehaviour
     {
         _colorFlash.Flash();
     }
+
     private void OnEnable()
     {
         _colorFlash = GetComponent<ColorFlash>();
-        hitObjectsSpawnerDespawner.OnMissedDefend += Flash;
+        HitObjectsSpawnerDespawner.Instance.OnMissedDefend += Flash;
     }
 
     private void OnDisable()
     {
-        hitObjectsSpawnerDespawner.OnMissedDefend -= Flash;
+        if (HitObjectsSpawnerDespawner.Instance != null)
+            HitObjectsSpawnerDespawner.Instance.OnMissedDefend -= Flash;
     }
 }

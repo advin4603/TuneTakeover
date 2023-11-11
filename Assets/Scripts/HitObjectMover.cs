@@ -5,10 +5,7 @@ using UnityEngine;
 
 public class HitObjectMover : MonoBehaviour
 {
-    public Conductor conductorScript;
-    
-    public BeatmapManager beatmapManagerScript;
-    public Vector3 initialPosition;
+    Vector3 initialPosition;
 
    
     private void Start()
@@ -20,7 +17,7 @@ public class HitObjectMover : MonoBehaviour
     void Update()
     {
         var position = initialPosition;
-        position.x += -conductorScript.songPosition * beatmapManagerScript.currentPlayingBeatmap.approachRate;
+        position.x += -Conductor.Instance.songPosition * BeatmapManager.Instance.currentPlayingBeatmap.approachRate;
         transform.localPosition = position;
     }
 

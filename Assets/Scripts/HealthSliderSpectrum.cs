@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(RectTransform))]
 public class HealthSliderSpectrum : MonoBehaviour
 {
     public int cutoff = 20;
@@ -10,7 +11,6 @@ public class HealthSliderSpectrum : MonoBehaviour
     public Color leftColor;
     public Color rightColor;
     public GameObject VisualiserBar;
-    public AudioSource audioSource;
     public Slider healthSlider;
     private (RectTransform, Image)[] bars;
     private RectTransform _rectTransform;
@@ -25,7 +25,6 @@ public class HealthSliderSpectrum : MonoBehaviour
     {
         _rectTransform = GetComponent<RectTransform>();
         float width = _rectTransform.rect.width;
-        float height = _rectTransform.rect.height;
         spectrumData = new float[count];
         int barCount = count - cutoff;
         bars = new (RectTransform, Image)[barCount];
@@ -46,7 +45,7 @@ public class HealthSliderSpectrum : MonoBehaviour
     {
         float value = healthSlider.value;
         int barCount = count - cutoff;
-        audioSource.GetSpectrumData(spectrumData, 0, FFTWindow.Triangle);
+        Conductor.Instance.songSource.GetSpectrumData(spectrumData, 0, FFTWindow.Triangle);
         for (int i = 0; i < barCount; i++)
         {
             bars[i].Item2.color = i+1 > value * barCount ? rightColor : leftColor;

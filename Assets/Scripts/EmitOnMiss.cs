@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ParticleSystem))]
 public class EmitOnMiss : MonoBehaviour
 {
     public bool attack;
     public bool defend;
     private ParticleSystem _particleSystem;
-    public HitObjectsSpawnerDespawner hitObjectsSpawnerDespawner;
 
     void Emit()
     {
@@ -18,16 +18,19 @@ public class EmitOnMiss : MonoBehaviour
     {
         _particleSystem = GetComponent<ParticleSystem>();
         if (defend)
-            hitObjectsSpawnerDespawner.OnMissedDefend += Emit;
+            HitObjectsSpawnerDespawner.Instance.OnMissedDefend += Emit;
         if (attack)
-            hitObjectsSpawnerDespawner.OnMissedAttack += Emit;
+            HitObjectsSpawnerDespawner.Instance.OnMissedAttack += Emit;
     }
 
     private void OnDisable()
     {
-        if (defend)
-            hitObjectsSpawnerDespawner.OnMissedDefend -= Emit;
-        if (attack)
-            hitObjectsSpawnerDespawner.OnMissedAttack -= Emit;
+        if (HitObjectsSpawnerDespawner.Instance != null)
+        {
+            if (defend)
+                HitObjectsSpawnerDespawner.Instance.OnMissedDefend -= Emit;
+            if (attack)
+                HitObjectsSpawnerDespawner.Instance.OnMissedAttack -= Emit;
+        }
     }
 }

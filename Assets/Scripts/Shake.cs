@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Shake : MonoBehaviour
 {
-    public Conductor conductorScript;
     private int oldBeat = -1;
     private Rigidbody _rigidbody;
     public float jumpSpeed;
@@ -19,7 +19,7 @@ public class Shake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int beatCount = (int)conductorScript.songPositionInBeats;
+        int beatCount = (int)Conductor.Instance.songPositionInBeats;
         if (oldBeat != beatCount)
         {
             oldBeat = beatCount;

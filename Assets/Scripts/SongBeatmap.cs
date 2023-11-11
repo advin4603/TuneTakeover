@@ -50,7 +50,7 @@ public class SongBeatmap : ScriptableObject
     public float beforePlayDelay;
     public float approachRate;
 
-    public List<string> commonHitObjectEvent = new List<string>();
+    public List<string> commonHitObjectEvent = new List<string>{"Enemy Beat Action"};
 
     public AudioClip audioClip;
 

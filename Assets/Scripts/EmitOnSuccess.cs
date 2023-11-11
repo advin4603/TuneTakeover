@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
+[RequireComponent(typeof(ParticleSystem))]
 public class EmitOnSuccess : MonoBehaviour
 {
     private ParticleSystem _particleSystem;
-    public HitObjectsSpawnerDespawner hitObjectsSpawnerDespawner;
     public Vector2 successWindow;
 
     void Emit(float offset)
@@ -19,13 +20,16 @@ public class EmitOnSuccess : MonoBehaviour
     private void OnEnable()
     {
         _particleSystem = GetComponent<ParticleSystem>();
-        hitObjectsSpawnerDespawner.OnSuccessfulAttack += Emit;
-        hitObjectsSpawnerDespawner.OnSuccessfulDefend += Emit;
+        HitObjectsSpawnerDespawner.Instance.OnSuccessfulAttack += Emit;
+        HitObjectsSpawnerDespawner.Instance.OnSuccessfulDefend += Emit;
     }
 
     private void OnDisable()
     {
-        hitObjectsSpawnerDespawner.OnSuccessfulAttack -= Emit;
-        hitObjectsSpawnerDespawner.OnSuccessfulDefend -= Emit;
+        if (HitObjectsSpawnerDespawner.Instance != null)
+        {
+            HitObjectsSpawnerDespawner.Instance.OnSuccessfulAttack -= Emit;
+            HitObjectsSpawnerDespawner.Instance.OnSuccessfulDefend -= Emit;
+        }
     }
 }
