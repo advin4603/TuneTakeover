@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(EnemyOnHitObjectAttacker))]
 public class EnemyOnHitObjectAttacker : MonoBehaviour
@@ -12,10 +13,13 @@ public class EnemyOnHitObjectAttacker : MonoBehaviour
     {
         _attackDefendInvoker.Defend();
     }
-    
+
     private void OnEnable()
     {
         HitObjectsSpawnerDespawner.Instance.OnUneccessaryAttack += DefendOnUnnecessaryAttack;
+        BeatmapEventsManager.Instance.eventMapDict.TryAdd("Enemy Beat Action",
+            new UnityEvent<SongBeatmap.SongHitObject>());
+        BeatmapEventsManager.Instance.eventMapDict["Enemy Beat Action"].AddListener(BeatAction);
     }
 
     private void OnDisable()
@@ -32,7 +36,7 @@ public class EnemyOnHitObjectAttacker : MonoBehaviour
     {
         if (songHitObject.hitObjectType != SongBeatmap.SongHitObject.SongHitObjectType.Defend)
             return;
-        
+
         _attackDefendInvoker.Attack();
     }
 }

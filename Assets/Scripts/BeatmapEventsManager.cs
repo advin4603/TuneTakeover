@@ -1,26 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using AYellowpaper.SerializedCollections;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class BeatmapEventsManager : MonoBehaviour
 {
 
-    [Serializable]
-    public class EventMapping
-    {
-        public string eventName;
-        public UnityEvent<SongBeatmap.SongHitObject> eventAction;
-    }
-
-    public List<EventMapping> eventMap;
-    public Dictionary<string, UnityEvent<SongBeatmap.SongHitObject>> eventMapDict;
+    
+    public SerializedDictionary<string, UnityEvent<SongBeatmap.SongHitObject>> eventMapDict;
 
     private int nextEvent = 0;
 
     public static BeatmapEventsManager Instance { get; private set; }
-    
+
     void InitialiseSingleton()
     {
         if (Instance != null)
@@ -28,8 +22,10 @@ public class BeatmapEventsManager : MonoBehaviour
             Destroy(Instance);
             Instance = null;
         }
+
         Instance = this;
     }
+
     private void Awake()
     {
         InitialiseSingleton();
@@ -39,16 +35,7 @@ public class BeatmapEventsManager : MonoBehaviour
     {
         Instance = this;
     }
-
-
-    private void Start()
-    {
-        eventMapDict = new Dictionary<string, UnityEvent<SongBeatmap.SongHitObject>>();
-        foreach (var mapping in eventMap)
-        {
-            eventMapDict.Add(mapping.eventName, mapping.eventAction);
-        }
-    }
+    
 
 
     // Update is called once per frame

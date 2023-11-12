@@ -12,20 +12,31 @@ public class Conductor : MonoBehaviour
 
 
     private double initialDspOffset;
+    public float gameOverSlowSpeed;
+    public float PauseSlowSpeed;
+    public float ResumeSpeed;
+
+
+    private bool slowingDown = false;
+    private bool resuming = false;
+    private float slowDownSpeed;
+
+    public delegate void FinishedSlowedPauseDelegate();
+
+    public FinishedSlowedPauseDelegate OnFinishSlowedPause;
+
 
     public float songPosition
     {
         get
         {
-            if (!BeatmapManager.Instance.playing)
-                return 0;
             var position = (float)songSource.timeSamples / (songSource.clip.frequency);
             if (AudioSettings.dspTime - initialDspOffset <
                 BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay)
             {
                 position = (float)(AudioSettings.dspTime - initialDspOffset) -
                            BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay;
-                position *= songSource.pitch;
+                // position *= songSource.pitch;
             }
 
             return position;
@@ -56,23 +67,36 @@ public class Conductor : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        InitialiseSingleton();
     }
 
     private void OnEnable()
     {
-        InitialiseSingleton();
+        Instance = this;
 
         songSource = GetComponent<AudioSource>();
         BeatmapManager.Instance.OnPlay += StartSong;
-        BeatmapManager.Instance.OnPause += PauseSong;
+        BeatmapManager.Instance.OnPauseStart += PauseSlowedPause;
+        BeatmapManager.Instance.OnResume += SmoothResume;
+        BeatmapManager.Instance.OnGameOverStart += GameOverSlowedPause;
+    }
+
+    void PauseSlowedPause()
+    {
+        SlowedPause(PauseSlowSpeed);
+    }
+
+    void GameOverSlowedPause()
+    {
+        SlowedPause(gameOverSlowSpeed);
     }
 
     private void OnDisable()
     {
-        
         BeatmapManager.Instance.OnPlay -= StartSong;
-        BeatmapManager.Instance.OnPause -= PauseSong;
+        BeatmapManager.Instance.OnPauseStart -= PauseSlowedPause;
+        BeatmapManager.Instance.OnResume -= SmoothResume;
+        BeatmapManager.Instance.OnGameOverStart -= GameOverSlowedPause;
     }
 
     void StartSong()
@@ -83,8 +107,49 @@ public class Conductor : MonoBehaviour
         songSource.PlayScheduled(initialDspOffset + BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay);
     }
 
-    void PauseSong()
+    void SlowedPause(float slowDownSpeed)
     {
-        songSource.Pause();
+        slowingDown = true;
+        this.slowDownSpeed = slowDownSpeed;
+    }
+
+    void FinishSlowedPause()
+    {
+        OnFinishSlowedPause?.Invoke();
+    }
+
+    void SmoothResume()
+    {
+        resuming = true;
+        songSource.pitch = 0;
+        songSource.UnPause(); // TODO fix the click
+    }
+
+    private void Update()
+    {
+        if (slowingDown)
+        {
+            songSource.pitch -= Time.deltaTime * slowDownSpeed;
+            songSource.volume -= Time.deltaTime * slowDownSpeed;
+            if (songSource.pitch <= 0 || songSource.volume <= 0)
+            {
+                songSource.pitch = 0;
+                songSource.volume = 0;
+                slowingDown = false;
+                songSource.Pause();
+                FinishSlowedPause();
+            }
+        }
+        else if (resuming)
+        {
+            songSource.pitch += Time.deltaTime * ResumeSpeed;
+            songSource.volume += Time.deltaTime * ResumeSpeed;
+            if (songSource.pitch >= 1 || songSource.volume >= 1)
+            {
+                songSource.volume = 1;
+                songSource.pitch = 1;
+                resuming = false;
+            }
+        }
     }
 }

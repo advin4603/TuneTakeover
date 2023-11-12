@@ -15,17 +15,22 @@ public class HealthManager : MonoBehaviour
 
     void MissedDefend()
     {
-        _slider.value -= 1f / defendCount;
+        _slider.value -= BeatmapManager.Instance.currentPlayingBeatmap.enemyHitPower / defendCount;
+        if (_slider.value <= 0)
+            BeatmapManager.Instance.GameOverStart();
     }
 
     void SuccessfulAttack(float offsetNormalised)
     {
-        _slider.value += (1 + (1 - offsetNormalised)) / attackCount;
+        _slider.value += (1 + (1 - offsetNormalised)) * BeatmapManager.Instance.currentPlayingBeatmap.playerHitPower /
+                         attackCount;
     }
 
     void UnnecessaryAttack()
     {
-        _slider.value -= 1f / attackCount;
+        _slider.value -= BeatmapManager.Instance.currentPlayingBeatmap.playerHitPower / attackCount;
+        if (_slider.value <= 0)
+            BeatmapManager.Instance.GameOverStart();
     }
 
     private void OnEnable()

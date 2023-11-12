@@ -49,6 +49,12 @@ public class SongBeatmap : ScriptableObject
     public List<SongTimingPoint> timingPoints;
     public float beforePlayDelay;
     public float approachRate;
+    
+    public int lateForgivenessTimeMilliseconds = 100;
+    public int earlyForgivenessTimeMilliseconds = 100;
+    public int despawnDelayMilliseconds = 200;
+    public float enemyHitPower = 1;
+    public float playerHitPower = 1;
 
     public List<string> commonHitObjectEvent = new List<string>{"Enemy Beat Action"};
 

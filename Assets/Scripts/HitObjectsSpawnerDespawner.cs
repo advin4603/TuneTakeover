@@ -21,10 +21,6 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
         new List<(GameObject, float, HitObjectDespawner)>();
 
 
-    public int lateForgivenessTimeMilliseconds;
-    public int earlyForgivenessTimeMilliseconds;
-    public int despawnDelayMilliseconds;
-
     public delegate void UnneccessaryAttackDelegate();
 
     public UnneccessaryAttackDelegate OnUneccessaryAttack;
@@ -80,22 +76,26 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
         var trackingHitObjectTime = attackHitObjects[attackHitObjects.Count - 1].Item2;
         var songPosition = Conductor.Instance.songPosition * 1000;
         if (songPosition <= trackingHitObjectTime &&
-            trackingHitObjectTime - songPosition <= earlyForgivenessTimeMilliseconds)
+            trackingHitObjectTime - songPosition <=
+            BeatmapManager.Instance.currentPlayingBeatmap.earlyForgivenessTimeMilliseconds)
         {
             // Early but ok
             attackHitObjects[attackHitObjects.Count - 1].Item3.Hit();
             attackHitObjects.RemoveAt(attackHitObjects.Count - 1);
-            SuccessfulAttack((songPosition - trackingHitObjectTime) / earlyForgivenessTimeMilliseconds);
+            SuccessfulAttack((songPosition - trackingHitObjectTime) /
+                             BeatmapManager.Instance.currentPlayingBeatmap.earlyForgivenessTimeMilliseconds);
             return;
         }
 
         if (songPosition >= trackingHitObjectTime &&
-            songPosition - trackingHitObjectTime <= lateForgivenessTimeMilliseconds)
+            songPosition - trackingHitObjectTime <=
+            BeatmapManager.Instance.currentPlayingBeatmap.lateForgivenessTimeMilliseconds)
         {
             // Late but ok
             attackHitObjects[attackHitObjects.Count - 1].Item3.Hit();
             attackHitObjects.RemoveAt(attackHitObjects.Count - 1);
-            SuccessfulAttack((songPosition - trackingHitObjectTime) / lateForgivenessTimeMilliseconds);
+            SuccessfulAttack((songPosition - trackingHitObjectTime) /
+                             BeatmapManager.Instance.currentPlayingBeatmap.lateForgivenessTimeMilliseconds);
             return;
         }
 
@@ -113,22 +113,26 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
         var trackingHitObjectTime = defendHitObjects[defendHitObjects.Count - 1].Item2;
         var songPosition = Conductor.Instance.songPosition * 1000;
         if (songPosition <= trackingHitObjectTime &&
-            trackingHitObjectTime - songPosition <= earlyForgivenessTimeMilliseconds)
+            trackingHitObjectTime - songPosition <=
+            BeatmapManager.Instance.currentPlayingBeatmap.earlyForgivenessTimeMilliseconds)
         {
             // Early but ok
             defendHitObjects[defendHitObjects.Count - 1].Item3.Hit();
             defendHitObjects.RemoveAt(defendHitObjects.Count - 1);
-            SuccessfulDefend((songPosition - trackingHitObjectTime) / earlyForgivenessTimeMilliseconds);
+            SuccessfulDefend((songPosition - trackingHitObjectTime) /
+                             BeatmapManager.Instance.currentPlayingBeatmap.earlyForgivenessTimeMilliseconds);
             return;
         }
 
         if (songPosition >= trackingHitObjectTime &&
-            songPosition - trackingHitObjectTime <= lateForgivenessTimeMilliseconds)
+            songPosition - trackingHitObjectTime <=
+            BeatmapManager.Instance.currentPlayingBeatmap.lateForgivenessTimeMilliseconds)
         {
             // Late but ok
             defendHitObjects[defendHitObjects.Count - 1].Item3.Hit();
             defendHitObjects.RemoveAt(defendHitObjects.Count - 1);
-            SuccessfulDefend((songPosition - trackingHitObjectTime) / lateForgivenessTimeMilliseconds);
+            SuccessfulDefend((songPosition - trackingHitObjectTime) /
+                             BeatmapManager.Instance.currentPlayingBeatmap.lateForgivenessTimeMilliseconds);
             return;
         }
 
@@ -166,6 +170,18 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
         OnMissedAttack?.Invoke();
     }
 
+    void Pause()
+    {
+        attackActionReference.action.started -= Attack;
+        defendActionReference.action.started -= Defend;
+    }
+
+    void Resume()
+    {
+        attackActionReference.action.started += Attack;
+        defendActionReference.action.started += Defend;
+    }
+
     private void OnEnable()
     {
         Instance = this;
@@ -173,6 +189,9 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
         BeatmapManager.Instance.OnBeforeStartPlay += SpawnHitObjects;
         attackActionReference.action.started += Attack;
         defendActionReference.action.started += Defend;
+
+        BeatmapManager.Instance.OnPause += Pause;
+        BeatmapManager.Instance.OnResume += Resume;
 
         attackActionReference.action.Enable();
         defendActionReference.action.Enable();
@@ -185,6 +204,8 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
         attackActionReference.action.started -= Attack;
         defendActionReference.action.started -= Defend;
 
+        BeatmapManager.Instance.OnPause -= Pause;
+        BeatmapManager.Instance.OnResume -= Resume;
 
         attackActionReference.action.Disable();
         defendActionReference.action.Disable();
@@ -220,19 +241,23 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
     private void Update()
     {
         var songPosition = Conductor.Instance.songPosition * 1000;
-        while (attackHitObjects.Count > 0 && songPosition - lateForgivenessTimeMilliseconds >
+        while (attackHitObjects.Count > 0 &&
+               songPosition - BeatmapManager.Instance.currentPlayingBeatmap.lateForgivenessTimeMilliseconds >
                attackHitObjects[attackHitObjects.Count - 1].Item2)
         {
             MissedAttack();
-            Destroy(attackHitObjects[attackHitObjects.Count - 1].Item1, despawnDelayMilliseconds / 1000f);
+            Destroy(attackHitObjects[attackHitObjects.Count - 1].Item1,
+                BeatmapManager.Instance.currentPlayingBeatmap.despawnDelayMilliseconds / 1000f);
             attackHitObjects.RemoveAt(attackHitObjects.Count - 1);
         }
 
-        while (defendHitObjects.Count > 0 && songPosition - lateForgivenessTimeMilliseconds >
+        while (defendHitObjects.Count > 0 &&
+               songPosition - BeatmapManager.Instance.currentPlayingBeatmap.lateForgivenessTimeMilliseconds >
                defendHitObjects[defendHitObjects.Count - 1].Item2)
         {
             MissedDefend();
-            Destroy(defendHitObjects[defendHitObjects.Count - 1].Item1, despawnDelayMilliseconds / 1000f);
+            Destroy(defendHitObjects[defendHitObjects.Count - 1].Item1,
+                BeatmapManager.Instance.currentPlayingBeatmap.despawnDelayMilliseconds / 1000f);
             defendHitObjects.RemoveAt(defendHitObjects.Count - 1);
         }
     }
