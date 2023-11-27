@@ -883,6 +883,14 @@ MonoBehaviour:
     millisecondsPerBeat: -100
   beforePlayDelay: 0
   approachRate: 10
+  previewTimeSeconds: 37.5
+  lateForgivenessTimeMilliseconds: 100
+  earlyForgivenessTimeMilliseconds: 100
+  despawnDelayMilliseconds: 200
+  enemyHitPower: 1
+  playerHitPower: 1
+  levelSceneName: bossBitchScene
+  thumbnail: {fileID: 21300000, guid: 8bb2996af4db17241affd380a4f5e15f, type: 3}
   commonHitObjectEvent:
   - Enemy Beat Action
   audioClip: {fileID: 8300000, guid: 42caf2b49efc2db40a4c102ab72d843d, type: 3}

@@ -667,11 +667,14 @@ MonoBehaviour:
     millisecondsPerBeat: -100
   beforePlayDelay: 0
   approachRate: 20
+  previewTimeSeconds: 0
   lateForgivenessTimeMilliseconds: 50
   earlyForgivenessTimeMilliseconds: 50
   despawnDelayMilliseconds: 200
   enemyHitPower: 1
   playerHitPower: 1
+  levelSceneName: BossScene
+  thumbnail: {fileID: 21300000, guid: 0b306edc4d4467a49b92a0f117a54a90, type: 3}
   commonHitObjectEvent:
   - Enemy Beat Action
   audioClip: {fileID: 8300000, guid: bf888540ca4819341bb0ad394aa47745, type: 3}

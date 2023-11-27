@@ -2296,6 +2296,14 @@ MonoBehaviour:
     millisecondsPerBeat: -100
   beforePlayDelay: 5
   approachRate: 9
+  previewTimeSeconds: 55
+  lateForgivenessTimeMilliseconds: 100
+  earlyForgivenessTimeMilliseconds: 100
+  despawnDelayMilliseconds: 200
+  enemyHitPower: 1
+  playerHitPower: 1
+  levelScene: {fileID: 0}
+  thumbnail: {fileID: 21300000, guid: eeaf38d9da63c024ea3509d0347d54d2, type: 3}
   commonHitObjectEvent:
   - Enemy Beat Action
   audioClip: {fileID: 8300000, guid: 7687c9b4e3e0bd4499e0c2bcd5ebf8fe, type: 3}

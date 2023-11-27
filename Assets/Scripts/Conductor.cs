@@ -20,18 +20,30 @@ public class Conductor : MonoBehaviour
     private bool slowingDown = false;
     private bool resuming = false;
     private float slowDownSpeed;
+    public bool hasBeforePlayDelay = true;
 
     public delegate void FinishedSlowedPauseDelegate();
 
     public FinishedSlowedPauseDelegate OnFinishSlowedPause;
 
+    public void PlayLoopPreview()
+    {
+        
+        initialDspOffset = (float)AudioSettings.dspTime;
+        songSource.clip = BeatmapManager.Instance.currentPlayingBeatmap.audioClip;
+        songSource.timeSamples =
+            (int)(BeatmapManager.Instance.currentPlayingBeatmap.previewTimeSeconds * songSource.clip.frequency);
+        songSource.loop = true;
+        songSource.Play();
+    }
 
+    
     public float songPosition
     {
         get
         {
             var position = (float)songSource.timeSamples / (songSource.clip.frequency);
-            if (AudioSettings.dspTime - initialDspOffset <
+            if (hasBeforePlayDelay && AudioSettings.dspTime - initialDspOffset <
                 BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay)
             {
                 position = (float)(AudioSettings.dspTime - initialDspOffset) -
@@ -103,7 +115,7 @@ public class Conductor : MonoBehaviour
     {
         initialDspOffset = (float)AudioSettings.dspTime;
         songSource.clip = BeatmapManager.Instance.currentPlayingBeatmap.audioClip;
-
+        
         songSource.PlayScheduled(initialDspOffset + BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay);
     }
 

@@ -35,6 +35,7 @@ public class BeatmapManager : MonoBehaviour
     public BeforeStartPlayDelegate OnBeforeStartPlay;
 
     public bool playing = false;
+    public bool disablePause = false;
 
     public static BeatmapManager Instance { get; private set; }
 
@@ -57,13 +58,16 @@ public class BeatmapManager : MonoBehaviour
     private void OnEnable()
     {
         Instance = this;
-        PauseActionReference.action.Enable();
-
-        PauseActionReference.action.performed += PausePressHandler;
+        if (!disablePause)
+        {
+            PauseActionReference.action.Enable();
+            PauseActionReference.action.performed += PausePressHandler;
+        }
     }
 
     private void OnDisable()
     {
+        if (disablePause) return;
         PauseActionReference.action.Disable();
 
         PauseActionReference.action.performed -= PausePressHandler;
@@ -72,18 +76,16 @@ public class BeatmapManager : MonoBehaviour
     void PausePressHandler(InputAction.CallbackContext _)
     {
         PauseStart();
-
-        PauseActionReference.action.performed -= PausePressHandler;
     }
 
     void ResumePressHandler(InputAction.CallbackContext _)
     {
-        PauseActionReference.action.performed -= ResumePressHandler;
         ResumePressed();
     }
 
-    void ResumePressed()
+    public void ResumePressed()
     {
+        PauseActionReference.action.performed -= ResumePressHandler;
         Countdown.Instance.OnFinishCountdown += Resume;
         OnResumePressed?.Invoke();
     }
@@ -99,6 +101,8 @@ public class BeatmapManager : MonoBehaviour
     {
         OnPauseStart?.Invoke();
         Conductor.Instance.OnFinishSlowedPause += Pause;
+
+        PauseActionReference.action.performed -= PausePressHandler;
     }
 
     void Start()
