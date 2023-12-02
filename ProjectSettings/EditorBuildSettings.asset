@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossScene.unity
     guid: e0465d4bfa21fe843919687e47fb514c
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 12497dbfa34e4664580e1e10d7ab4492
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

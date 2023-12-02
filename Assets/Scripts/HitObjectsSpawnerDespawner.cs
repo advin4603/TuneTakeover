@@ -193,6 +193,9 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
         BeatmapManager.Instance.OnPause += Pause;
         BeatmapManager.Instance.OnResume += Resume;
 
+        BeatmapManager.Instance.OnGameOverStart += Pause;
+        BeatmapManager.Instance.OnFinish += Pause;
+
         attackActionReference.action.Enable();
         defendActionReference.action.Enable();
     }
@@ -203,6 +206,10 @@ public class HitObjectsSpawnerDespawner : MonoBehaviour
             BeatmapManager.Instance.OnBeforeStartPlay -= SpawnHitObjects;
         attackActionReference.action.started -= Attack;
         defendActionReference.action.started -= Defend;
+        
+        
+        BeatmapManager.Instance.OnGameOverStart -= Pause;
+        BeatmapManager.Instance.OnFinish -= Pause;
 
         BeatmapManager.Instance.OnPause -= Pause;
         BeatmapManager.Instance.OnResume -= Resume;

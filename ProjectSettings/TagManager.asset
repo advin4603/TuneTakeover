@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: HitObjects
+    uniqueID: 697736815
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

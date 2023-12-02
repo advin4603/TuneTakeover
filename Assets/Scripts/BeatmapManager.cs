@@ -20,6 +20,10 @@ public class BeatmapManager : MonoBehaviour
 
     public PlayDelegate OnPlay;
 
+    public delegate void FinishDelegate();
+
+    public FinishDelegate OnFinish;
+
     public delegate void PauseDelegate();
 
     public PauseDelegate OnPauseStart;
@@ -36,6 +40,9 @@ public class BeatmapManager : MonoBehaviour
 
     public bool playing = false;
     public bool disablePause = false;
+
+    public bool paused = false;
+    public bool gameOverStarted = false;
 
     public static BeatmapManager Instance { get; private set; }
 
@@ -92,6 +99,7 @@ public class BeatmapManager : MonoBehaviour
 
     void Resume()
     {
+        paused = false;
         Countdown.Instance.OnFinishCountdown -= Resume;
         PauseActionReference.action.performed += PausePressHandler;
         OnResume?.Invoke();
@@ -99,10 +107,18 @@ public class BeatmapManager : MonoBehaviour
 
     void PauseStart()
     {
+        paused = true;
         OnPauseStart?.Invoke();
         Conductor.Instance.OnFinishSlowedPause += Pause;
 
         PauseActionReference.action.performed -= PausePressHandler;
+    }
+
+    public void Finish()
+    {
+        playing = false;
+        PauseActionReference.action.performed -= PausePressHandler;
+        OnFinish?.Invoke();
     }
 
     void Start()
@@ -133,6 +149,8 @@ public class BeatmapManager : MonoBehaviour
 
     public void GameOverStart()
     {
+        gameOverStarted = true;
+        PauseActionReference.action.performed -= PausePressHandler;
         OnGameOverStart?.Invoke();
         Conductor.Instance.OnFinishSlowedPause += GameOver;
     }

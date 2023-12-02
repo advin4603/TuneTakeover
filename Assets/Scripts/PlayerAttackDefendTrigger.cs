@@ -42,6 +42,8 @@ public class PlayerAttackDefendTrigger : MonoBehaviour
 
         BeatmapManager.Instance.OnPause += Pause;
         BeatmapManager.Instance.OnResume += Resume;
+        BeatmapManager.Instance.OnGameOverStart += Pause;
+        BeatmapManager.Instance.OnFinish += Pause;
         attackActionReference.action.Enable();
         defendActionReference.action.Enable();
     }
@@ -53,6 +55,8 @@ public class PlayerAttackDefendTrigger : MonoBehaviour
         
         BeatmapManager.Instance.OnPause -= Pause;
         BeatmapManager.Instance.OnResume -= Resume;
+        BeatmapManager.Instance.OnGameOverStart -= Pause;
+        BeatmapManager.Instance.OnFinish -= Pause;
 
         attackActionReference.action.Disable();
         defendActionReference.action.Disable();

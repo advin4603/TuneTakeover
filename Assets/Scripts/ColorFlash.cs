@@ -12,7 +12,7 @@ public class ColorFlash : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
     private float t = 0;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +28,10 @@ public class ColorFlash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _spriteRenderer.color = Color.Lerp(originalColor, flashColor, flashCurve.Evaluate(t));
+        _spriteRenderer.material.SetColor("_Color", Color.Lerp(originalColor, flashColor, flashCurve.Evaluate(t)));
         if (t > 0)
             t -= Time.deltaTime * flashSpeed;
         else
             t = 0;
-
     }
 }

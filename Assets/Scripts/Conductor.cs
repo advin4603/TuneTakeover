@@ -37,13 +37,20 @@ public class Conductor : MonoBehaviour
         songSource.Play();
     }
 
-    
+    private bool finished = false;
+    public void Finished()
+    {
+        BeatmapManager.Instance.Finish();
+    }
+
+    private float lastSongPosition = -Mathf.Infinity;
     public float songPosition
     {
         get
         {
             var position = (float)songSource.timeSamples / (songSource.clip.frequency);
-            if (hasBeforePlayDelay && AudioSettings.dspTime - initialDspOffset <
+            
+            if (hasBeforePlayDelay && AudioSettings.dspTime - initialDspOffset <=
                 BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay)
             {
                 position = (float)(AudioSettings.dspTime - initialDspOffset) -
@@ -51,6 +58,13 @@ public class Conductor : MonoBehaviour
                 // position *= songSource.pitch;
             }
 
+            if (lastSongPosition > position && !finished)
+            {
+                finished = true;
+                Finished();
+            }
+            lastSongPosition = position;
+            
             return position;
         }
     }
