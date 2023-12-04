@@ -1,0 +1,1322 @@
+fileFormatVersion: 2
+guid: 15e1cb94d6ee3094a8738621247f1068
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hatsune Miku_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1259
+        width: 53
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9239cc80331ef45a71ff7d31de5994
+      internalID: -329008961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1272
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df13372728e9174191af6574a473d4a
+      internalID: -1854871498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1273
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fd017f2af406c429079a337825ccdb
+      internalID: 1534582200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1272
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507ee923e61418c4b9b530559516be6d
+      internalID: 888236225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_4
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 946
+        width: 409
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d84cdc78e58794b87640bd441d4103
+      internalID: 421039444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1145
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75cb115befab8b4c929d5cabc6227a5
+      internalID: -1036003334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1138
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c1bc019c844da4898ef9c0f5f5609c
+      internalID: -1148600119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1144
+        width: 69
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905a96c8d3c92e741b2bd2bfd3229e14
+      internalID: 2107954552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1092
+        width: 60
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc0f0a9155768f4a875800d1a4c3f9c
+      internalID: 1631964574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1014
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb95151f9829ecd488ca716abea429f8
+      internalID: 601799769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 992
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af414ed2a1415a408ea09ada949b563
+      internalID: 788429984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_11
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1013
+        width: 105
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb77ec6a8987654389bd4f92e6f7f1f
+      internalID: -418421713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 880
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3b0cd6773c3c9458f626482cbc55b7
+      internalID: 1074251019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_13
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 730
+        width: 100
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea68200eecf886e4baebd11e40c44ee4
+      internalID: -2109799693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_14
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 748
+        width: 66
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbb34a9f45b60f4694e27480e65a2b7
+      internalID: -2088751655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_15
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 877
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f912a22b504b1d64fb57e85dc6eddc1b
+      internalID: 1024180033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_16
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 742
+        width: 95
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cb027d6827dbd4aa6d40130d7885c1
+      internalID: -1144669502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_17
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 877
+        width: 63
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0fd577221fa8646a01eb7f03fc8d3d
+      internalID: -1033848147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_18
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 876
+        width: 85
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1f084716fad1447adfe19cec5857f5
+      internalID: -897195161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 713
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41baee268f583c94a951d32196d3b16b
+      internalID: -751830985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_20
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 794
+        width: 267
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3c97a450947f843932ddaa8f37a433
+      internalID: 1864363862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_21
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 624
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43524c022097b3343a98170ffe44b0bd
+      internalID: -1043982074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_22
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 624
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb13efdacbcd9348909b612528498d4
+      internalID: 7353928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_23
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 624
+        width: 71
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d78863242922334b86a77df09f52b68
+      internalID: 1991163526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_24
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 613
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26872917c600cf046af9fd6e75e3eecb
+      internalID: -1873140593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_25
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 624
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3badd4ec69fff4ab19eb322fb234e9
+      internalID: 742009723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_26
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 624
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3442a6afac279954899bc20a098f670d
+      internalID: -1381753843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_27
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 496
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6f55da0d92d65478256d624fc6d8cf
+      internalID: 989761803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_28
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 496
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1076ec3673d9d104b913b60ec988ed60
+      internalID: -602784311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_29
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 496
+        width: 70
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f504ad4f34650774bb93d6ac83f51bb4
+      internalID: -373368105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_30
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 496
+        width: 76
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e37637e3b8572549bcd858ddb454614
+      internalID: -198663090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_31
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 496
+        width: 52
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc964b1d0ecdd942b935d6b4eb5bf6a
+      internalID: -952197143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_32
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 498
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd1c3862aed4c74ca2f63462ef31f2c
+      internalID: 1246937725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_33
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 496
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a606976572e18e84195485703cf31705
+      internalID: -411645805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_34
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 496
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd0766f67d1ce2448fa4f9978c9b1cd
+      internalID: -1682032907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_35
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 368
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a3cb0a8837d214288ebdc36fa9fcae
+      internalID: -922686871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_36
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 368
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23e69ce7a6e42540b8c918496aab3bf
+      internalID: 2135442567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_37
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 368
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebe41ca78371e24ca5dec76619ff783
+      internalID: -976849918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_38
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 368
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b62d0711d2179743b15d80f83ec521e
+      internalID: 1372165438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_39
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 114
+        width: 152
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfcaea8ae7c56942b7640c2518ff088
+      internalID: -1942351243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_40
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 315
+        width: 77
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b131baea3a1e464d97330a0eda6b036
+      internalID: 734582117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_41
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 202
+        width: 147
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593a646dc9760f74c88b5b9dd56e945a
+      internalID: -1511628228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_42
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 368
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a178f6a803eae468594b5b5dd0077a
+      internalID: 1722783228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_43
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 240
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc708765a09892439b53ee56a08bd4e
+      internalID: -329343106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_44
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 240
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053e5dc39b5959845a9c424cf8b1fd44
+      internalID: 980976255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_45
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 240
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b7c245a7141df4a822586e9befbf7d
+      internalID: -370057694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_46
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 240
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c5e3c3120cfe243b58c4c2cdbe8c13
+      internalID: -1293630855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_47
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 133
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5ade648c1be264da8dd61003522bc2
+      internalID: -1965537669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_48
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 126
+        width: 58
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e764f1b7b7a4d9f468e0a53ffa93261a
+      internalID: -1060127652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_49
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 126
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3cf05de977d2d488c17cf6cd4f323f
+      internalID: -1092433850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_50
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 126
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729bccff12cb465418deb5c2ec667ec7
+      internalID: 988943545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_51
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c36b2818da541439b8fc9167cf4f97
+      internalID: -1699757679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_52
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b99c8828db3954cb64f34bd9ba86ca
+      internalID: -1346611465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 75
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbc7e45440a8df4899309deacdacb24
+      internalID: -329878690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hatsune Miku_54
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6920ace4c0287814f8beb7032815b083
+      internalID: -822900317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e4579f82ee198b641a57f8cf2b8bb58f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hatsune Miku_0: -329008961
+      Hatsune Miku_1: -1854871498
+      Hatsune Miku_10: 788429984
+      Hatsune Miku_11: -418421713
+      Hatsune Miku_12: 1074251019
+      Hatsune Miku_13: -2109799693
+      Hatsune Miku_14: -2088751655
+      Hatsune Miku_15: 1024180033
+      Hatsune Miku_16: -1144669502
+      Hatsune Miku_17: -1033848147
+      Hatsune Miku_18: -897195161
+      Hatsune Miku_19: -751830985
+      Hatsune Miku_2: 1534582200
+      Hatsune Miku_20: 1864363862
+      Hatsune Miku_21: -1043982074
+      Hatsune Miku_22: 7353928
+      Hatsune Miku_23: 1991163526
+      Hatsune Miku_24: -1873140593
+      Hatsune Miku_25: 742009723
+      Hatsune Miku_26: -1381753843
+      Hatsune Miku_27: 989761803
+      Hatsune Miku_28: -602784311
+      Hatsune Miku_29: -373368105
+      Hatsune Miku_3: 888236225
+      Hatsune Miku_30: -198663090
+      Hatsune Miku_31: -952197143
+      Hatsune Miku_32: 1246937725
+      Hatsune Miku_33: -411645805
+      Hatsune Miku_34: -1682032907
+      Hatsune Miku_35: -922686871
+      Hatsune Miku_36: 2135442567
+      Hatsune Miku_37: -976849918
+      Hatsune Miku_38: 1372165438
+      Hatsune Miku_39: -1942351243
+      Hatsune Miku_4: 421039444
+      Hatsune Miku_40: 734582117
+      Hatsune Miku_41: -1511628228
+      Hatsune Miku_42: 1722783228
+      Hatsune Miku_43: -329343106
+      Hatsune Miku_44: 980976255
+      Hatsune Miku_45: -370057694
+      Hatsune Miku_46: -1293630855
+      Hatsune Miku_47: -1965537669
+      Hatsune Miku_48: -1060127652
+      Hatsune Miku_49: -1092433850
+      Hatsune Miku_5: -1036003334
+      Hatsune Miku_50: 988943545
+      Hatsune Miku_51: -1699757679
+      Hatsune Miku_52: -1346611465
+      Hatsune Miku_53: -329878690
+      Hatsune Miku_54: -822900317
+      Hatsune Miku_6: -1148600119
+      Hatsune Miku_7: 2107954552
+      Hatsune Miku_8: 1631964574
+      Hatsune Miku_9: 601799769
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

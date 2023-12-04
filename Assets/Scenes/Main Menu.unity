@@ -486,8 +486,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1259,7 +1259,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -463, y: -295}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &756490735
 MonoBehaviour:
@@ -1758,7 +1758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Give me my songs back!
+  m_text: Tune Takeover
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2370,6 +2370,7 @@ GameObject:
   - component: {fileID: 1306149450}
   - component: {fileID: 1306149449}
   - component: {fileID: 1306149448}
+  - component: {fileID: 1306149451}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -2440,7 +2441,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1306149449}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1306149451}
+        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1306149449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2479,6 +2492,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306149446}
   m_CullTransparentMesh: 1
+--- !u!114 &1306149451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306149446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97ffff6bcbdb3940b4206706521438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1364507276
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,10 +3103,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
+  - {fileID: 11400000, guid: acb323562ab46c34188737b98333eae2, type: 2}
   - {fileID: 11400000, guid: 6867655c916ff18439176ce047230eb1, type: 2}
+  - {fileID: 11400000, guid: 8b596438b6f398945b175ca48f81c781, type: 2}
   - {fileID: 11400000, guid: 374c8af9f82ecd74aa490ce607b47d12, type: 2}
-  - {fileID: 11400000, guid: 305b5b57be68abe45aa6fc1138e9b86f, type: 2}
   - {fileID: 11400000, guid: 2f937b9337a1b1c4899cbe9b4295ceeb, type: 2}
+  - {fileID: 11400000, guid: c87c813666036294db5454f000b3c8c1, type: 2}
   levelObjectPrefab: {fileID: 282738708905346041, guid: 790ed88e312fcd944bc0295be2ab9335, type: 3}
   currentSelectedLevelImage: {fileID: 1163453317}
   currentArtistNameText: {fileID: 521133473}

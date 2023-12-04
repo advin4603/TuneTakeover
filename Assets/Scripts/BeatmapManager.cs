@@ -44,6 +44,8 @@ public class BeatmapManager : MonoBehaviour
     public bool paused = false;
     public bool gameOverStarted = false;
 
+    public bool startOnStart = true;
+
     public static BeatmapManager Instance { get; private set; }
 
     void InitialiseSingleton()
@@ -123,11 +125,12 @@ public class BeatmapManager : MonoBehaviour
 
     void Start()
     {
-        StartPlay();
+        if (startOnStart)
+            StartPlay();
     }
 
 
-    void StartPlay()
+    public void StartPlay()
     {
         OnBeforeStartPlay?.Invoke();
         Play();

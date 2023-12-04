@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 9mm
   m_EditorClassIdentifier: 
   initialOffset: 0
-  songTitle: 
-  songArtist: 
+  songTitle: 9mm
+  songArtist: Memphis Cult
   hitObjects:
   - hitObjectType: 0
     time: 0
@@ -616,11 +616,14 @@ MonoBehaviour:
     millisecondsPerBeat: 387.0967741935484
   beforePlayDelay: 4
   approachRate: 10
+  previewTimeSeconds: 0
   lateForgivenessTimeMilliseconds: 100
   earlyForgivenessTimeMilliseconds: 100
   despawnDelayMilliseconds: 200
   enemyHitPower: 5
   playerHitPower: 1
+  levelSceneName: 9mm
+  thumbnail: {fileID: 21300000, guid: 4197978071148664daf0ba14cc2e5cd9, type: 3}
   commonHitObjectEvent:
   - Enemy Beat Action
   audioClip: {fileID: 8300000, guid: 819e5c67c1b9d1943923c0775c18960e, type: 3}

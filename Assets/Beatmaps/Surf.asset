@@ -637,7 +637,7 @@ MonoBehaviour:
   despawnDelayMilliseconds: 200
   enemyHitPower: 1
   playerHitPower: 1
-  levelSceneName: Tutorial
+  levelSceneName: Beach
   thumbnail: {fileID: 21300000, guid: 3b8f76a68f4235e4a9f0a5d0ff47d070, type: 3}
   commonHitObjectEvent:
   - Enemy Beat Action

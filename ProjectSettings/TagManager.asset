@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 2337704721
+    locked: 0
   - name: HitObjects
     uniqueID: 697736815
     locked: 0

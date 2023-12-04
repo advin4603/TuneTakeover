@@ -6,7 +6,9 @@ using OsuParsers.Beatmaps;
 using OsuParsers.Beatmaps.Objects;
 using Unity.VisualScripting;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System.IO;
 using System.IO.Compression;
 using OsuParsers.Beatmaps.Objects.Taiko;
@@ -104,7 +106,7 @@ public class SongBeatmap : ScriptableObject
 
         return timingPoints[timingPoint].millisecondsPerBeat * multiplier / 1000f;
     }
-
+#if UNITY_EDITOR
     public bool ImportOszFile(string osuFilePath, string parentFolderName)
     {
         osuBeatmap = BeatmapDecoder.Decode(osuFilePath);
@@ -145,7 +147,11 @@ public class SongBeatmap : ScriptableObject
         approachRate = osuBeatmap.DifficultySection.ApproachRate;
         return true;
     }
+    
+#endif
 }
+
+#if UNITY_EDITOR
 
 [CustomEditor(typeof(SongBeatmap))]
 public class SongBeatmapEditor : Editor
@@ -210,3 +216,4 @@ public class SongBeatmapEditor : Editor
         }
     }
 }
+#endif

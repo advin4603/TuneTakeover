@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc36cfebd7e2f4eb0f7f0581a0a151, type: 3}
+  m_Name: IevanPolkka
+  m_EditorClassIdentifier: 
+  initialOffset: 0
+  songTitle: 'Tutorial: Ievan Polkka'
+  songArtist: Otomania
+  hitObjects:
+  - hitObjectType: 1
+    time: 9107
+    hitObjectEvent:
+    - DefendHint
+  - hitObjectType: 1
+    time: 10115
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 10619
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 11124
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 12132
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 13140
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 14149
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 14653
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 15157
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 17174
+    hitObjectEvent:
+    - AttackHint
+  - hitObjectType: 1
+    time: 18182
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 18687
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 19191
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 19695
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 20199
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 21208
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 22216
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 23224
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 23729
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 24233
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 25241
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 25745
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 26250
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 27258
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 27762
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 28266
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 29275
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 31292
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 31796
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 32300
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 33308
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 34317
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 34821
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 35325
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 35829
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 36334
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 37342
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 38350
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 39359
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 39863
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 40367
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 41376
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 41880
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 42384
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 43392
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 43897
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 44401
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 45409
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 47426
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 47930
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 48434
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 57510
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 58518
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 59527
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 60031
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 60535
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 61544
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 62552
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 63561
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 65073
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 65577
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 66586
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 67090
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 67594
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 68098
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 68603
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 69611
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 70619
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 71628
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 72132
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 72636
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 73645
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 74149
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 74653
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 75157
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 75661
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 76670
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 77678
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 78182
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 78687
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 79191
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 79695
+    hitObjectEvent: []
+  - hitObjectType: 0
+    time: 80199
+    hitObjectEvent: []
+  - hitObjectType: 1
+    time: 80703
+    hitObjectEvent: []
+  timingPoints:
+  - Inherited: 0
+    time: 1040
+    millisecondsPerBeat: 504.201680672269
+  - Inherited: 1
+    time: 65388
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 65577
+    millisecondsPerBeat: -100
+  - Inherited: 1
+    time: 80703
+    millisecondsPerBeat: -100
+  beforePlayDelay: 20
+  approachRate: 5
+  previewTimeSeconds: 20
+  lateForgivenessTimeMilliseconds: 100
+  earlyForgivenessTimeMilliseconds: 100
+  despawnDelayMilliseconds: 200
+  enemyHitPower: 1
+  playerHitPower: 1
+  levelSceneName: IevanPolkkaScene
+  thumbnail: {fileID: 21300000, guid: fe23eae8c9da0f9439ca2c324818b0f4, type: 3}
+  commonHitObjectEvent:
+  - Enemy Beat Action
+  audioClip: {fileID: 8300000, guid: 9364d113b9e5e6849abbedd1da9216aa, type: 3}
