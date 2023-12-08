@@ -1,6 +1,8 @@
 # Tune Takeover
 
-A level based action/rhythm game/
+A level based action/rhythm game
+
+[CLick Here To Download For Windows](https://github.com/advin4603/TuneTakeover/releases/tag/submission)
 
 ## About
 Upon opening the game you find out all your songs in your playlist have run away. You must fight them in order to bring them back.
