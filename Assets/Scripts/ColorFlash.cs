@@ -17,7 +17,7 @@ public class ColorFlash : MonoBehaviour
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        originalColor = _spriteRenderer.color;
+        originalColor = _spriteRenderer.material.GetColor("_Color");
     }
 
     public void Flash()

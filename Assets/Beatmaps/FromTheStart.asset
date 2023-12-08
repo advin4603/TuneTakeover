@@ -650,7 +650,7 @@ MonoBehaviour:
   - Inherited: 0
     time: 271
     millisecondsPerBeat: 322.5806451612903
-  beforePlayDelay: 0.271
+  beforePlayDelay: 0
   approachRate: 5
   previewTimeSeconds: 0
   lateForgivenessTimeMilliseconds: 100

@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_A3530D4C:
-        m_Texture: {fileID: 2800000, guid: 88bbd5d2f70b1df4eb9f8986a0bc94ee, type: 3}
+        m_Texture: {fileID: 2800000, guid: c1c3a001bd36ccd4fb0602a0f7580ad0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C42660B6:
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cb4a0f3c47fa4b24cb271476fab4442f, type: 3}
+        m_Texture: {fileID: 2800000, guid: c1c3a001bd36ccd4fb0602a0f7580ad0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -96,9 +96,9 @@ Material:
     - Boolean_2D5D59FD: 0
     - Boolean_A8A4A9A3: 0
     - Vector1_503B8F03: 1
-    - Vector1_53CED8F1: 0.5
+    - Vector1_53CED8F1: 0.006
     - Vector1_5B1CB1BB: 1
-    - Vector1_FC5C40FF: 0.139
+    - Vector1_FC5C40FF: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
