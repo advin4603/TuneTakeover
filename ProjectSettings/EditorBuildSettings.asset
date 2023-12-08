@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Dummy.unity
+    guid: 501863020f674464ca3b416a9073170d
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: df0eeaa1d50ffff42b9ac6a1b3743e84
   - enabled: 1
@@ -26,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/9mm.unity
     guid: f84f76dcf602eef4999c3cc8675cd9ff
+  - enabled: 1
+    path: Assets/Scenes/rasputin.unity
+    guid: 0247bf71766884b4aa26ed745b79eea3
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
