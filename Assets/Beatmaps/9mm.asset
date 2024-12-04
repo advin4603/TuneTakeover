@@ -16,598 +16,796 @@ MonoBehaviour:
   songTitle: 9mm
   songArtist: Memphis Cult
   hitObjects:
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 0
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 387
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 967
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 1161
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 1548
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 1935
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 2129
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 2516
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 2709
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 3096
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 3483
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 4064
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 4258
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 4645
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 5032
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 5225
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 5419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 5612
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 5806
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 6193
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 6580
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 7161
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 7354
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 7741
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 8129
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 8322
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 8709
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 8903
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 9290
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 9677
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 10258
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 10451
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 10838
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 11225
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 11419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 11612
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 12000
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 12387
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 14129
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 14322
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 1.5
+    hitObjectType: 1
     time: 14709
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 15677
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 15870
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 16064
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 16258
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 16838
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 17032
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 17225
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 17419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 17806
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 18580
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 20322
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 20516
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 20903
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 21870
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 22064
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 22258
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 22451
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 23032
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 23225
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 23419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 23612
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 23999
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 24774
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 25161
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 25741
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 25935
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 26322
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 26709
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 26903
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 27290
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 27483
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 27870
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 28258
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 28838
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 29032
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 29419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 29806
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 30193
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 30580
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 30967
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 31741
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 32322
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 32709
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 32903
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 33290
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 34064
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 34838
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 35419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 35806
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 36000
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 36387
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 36774
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 37161
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 37935
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 38516
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 38903
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 39096
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 39483
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 39870
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 40258
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 41032
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 41612
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 42000
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 42193
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 42580
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 43354
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 44129
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 44709
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 45096
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 45290
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 45677
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 46451
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 47225
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 47806
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 48193
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 48387
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 48580
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 48774
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 48967
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 49161
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 49354
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 49548
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 52645
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 53419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 54000
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 54387
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 54580
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 54967
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 55354
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 55741
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 56516
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 57096
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 57483
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 57677
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 58064
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 58838
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 59612
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 60193
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 60580
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 60774
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 60967
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 61161
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 61354
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 61451
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 61548
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 61741
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 64258
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 64645
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 65032
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 65225
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 65419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 65612
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 66387
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 66580
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 66774
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 66967
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 67354
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 68129
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 68903
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 69483
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 69870
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 70064
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 70451
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 71225
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 71419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 71612
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 71806
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 72000
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 72580
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 72774
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 72967
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 73161
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 73548
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 77419
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 77806
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 78193
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 78387
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 78580
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 78774
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 78967
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 79354
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 79548
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 79741
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 79935
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 80129
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 80516
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 80903
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 81290
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 81483
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 81677
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 81870
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 82064
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 82451
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 82645
     hitObjectEvent: []
-  - hitObjectType: 1
+  - approachMultiplier: 0
+    hitObjectType: 1
     time: 82838
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 83032
     hitObjectEvent: []
-  - hitObjectType: 0
+  - approachMultiplier: 0
+    hitObjectType: 0
     time: 83225
     hitObjectEvent: []
   timingPoints:
@@ -615,7 +813,7 @@ MonoBehaviour:
     time: 0
     millisecondsPerBeat: 387.0967741935484
   beforePlayDelay: 4
-  approachRate: 10
+  approachRate: 16
   previewTimeSeconds: 0
   lateForgivenessTimeMilliseconds: 100
   earlyForgivenessTimeMilliseconds: 100
@@ -626,4 +824,5 @@ MonoBehaviour:
   thumbnail: {fileID: 21300000, guid: 4197978071148664daf0ba14cc2e5cd9, type: 3}
   commonHitObjectEvent:
   - Enemy Beat Action
+  - Debug Hit
   audioClip: {fileID: 8300000, guid: 819e5c67c1b9d1943923c0775c18960e, type: 3}

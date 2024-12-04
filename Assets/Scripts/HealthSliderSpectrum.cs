@@ -14,11 +14,12 @@ public class HealthSliderSpectrum : MonoBehaviour
     public Slider healthSlider;
     private (RectTransform, Image)[] bars;
     private RectTransform _rectTransform;
-    
-    
+
 
     private float[] spectrumData;
     public float spectrumScale;
+    public AnimationCurve scaleCurve;
+    private bool updateSpectrum = true;
 
     // Start is called before the first frame update
     void Start()
@@ -45,14 +46,22 @@ public class HealthSliderSpectrum : MonoBehaviour
     {
         float value = healthSlider.value;
         int barCount = count - cutoff;
-        Conductor.Instance.songSource.GetSpectrumData(spectrumData, 0, FFTWindow.Triangle);
-        for (int i = 0; i < barCount; i++)
+
+        if (updateSpectrum)
         {
-            bars[i].Item2.color = i+1 > value * barCount ? rightColor : leftColor;
-            var localScale = bars[i].Item1.transform.localScale;
-            bars[i].Item1.transform.localScale = localScale;
-            localScale.y = Mathf.Min(spectrumScale * Mathf.Sqrt(spectrumData[i]), 1f);
-            bars[i].Item1.transform.localScale = localScale;
+            Conductor.Instance.songSource.GetSpectrumData(spectrumData, 0, FFTWindow.Triangle);
+            for (int i = 0; i < barCount; i++)
+            {
+                bars[i].Item2.color = i + 1 > value * barCount ? rightColor : leftColor;
+                var localScale = bars[i].Item1.transform.localScale;
+                localScale.y = spectrumScale * Mathf.Sqrt(spectrumData[i]) * scaleCurve.Evaluate((float)i / barCount);
+                bars[i].Item1.transform.localScale = localScale;
+            }
         }
+        else
+            for (int i = 0; i < barCount; i++) 
+                bars[i].Item2.color = i + 1 > value * barCount ? rightColor : leftColor;
+
+        updateSpectrum = !updateSpectrum;
     }
 }

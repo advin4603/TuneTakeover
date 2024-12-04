@@ -22,9 +22,9 @@ public class Pulse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Conductor.Instance.songPositionInBeats >= 0)
+        int new_beat = (int)Conductor.Instance.SongPositionInBeats(true, false, true);
+        if (new_beat >= 0)
         {
-            int new_beat = (int)Conductor.Instance.songPositionInBeats;
             if (previousBeat != new_beat)
                 t = 1;
             previousBeat = new_beat;
@@ -32,7 +32,7 @@ public class Pulse : MonoBehaviour
 
         transform.localScale = Vector3.Lerp(originalScale, originalScale * pulseFactor, t);
         t -= Time.deltaTime * pulseSpeed *
-             (float)BeatmapManager.Instance.currentPlayingBeatmap.SecondsPerBeatAt((int)(Conductor.Instance.songPosition * 1000));
+             (float)BeatmapManager.Instance.currentPlayingBeatmap.SecondsPerBeatAt(
+                 (int)(Conductor.Instance.SongPosition(true, false, true) * 1000));
     }
-    
 }

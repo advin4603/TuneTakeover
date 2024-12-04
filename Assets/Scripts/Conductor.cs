@@ -10,6 +10,12 @@ public class Conductor : MonoBehaviour
 {
     public AudioSource songSource { get; private set; }
 
+    public float visualOffset; // how much time (sec) it takes for something to show up on screen
+    public float inputOffset; // how much time (sec) it takes for an input to register
+    public float audioOffset; // how much time (sec) it takes for a sound to play
+
+    public float audioVisualOffset;
+    public float audioInputOffset;
 
     private double initialDspOffset;
     public float gameOverSlowSpeed;
@@ -22,13 +28,14 @@ public class Conductor : MonoBehaviour
     private float slowDownSpeed;
     public bool hasBeforePlayDelay = true;
 
+    private float songVolume;
+
     public delegate void FinishedSlowedPauseDelegate();
 
     public FinishedSlowedPauseDelegate OnFinishSlowedPause;
 
     public void PlayLoopPreview()
     {
-        
         initialDspOffset = (float)AudioSettings.dspTime;
         songSource.clip = BeatmapManager.Instance.currentPlayingBeatmap.audioClip;
         songSource.timeSamples =
@@ -38,44 +45,50 @@ public class Conductor : MonoBehaviour
     }
 
     private bool finished = false;
+
     public void Finished()
     {
         BeatmapManager.Instance.Finish();
     }
 
     private float lastSongPosition = -Mathf.Infinity;
-    public float songPosition
-    {
-        get
-        {
-            var position = (float)songSource.timeSamples / (songSource.clip.frequency);
-            
-            if (hasBeforePlayDelay && AudioSettings.dspTime - initialDspOffset <=
-                BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay)
-            {
-                position = (float)(AudioSettings.dspTime - initialDspOffset) -
-                           BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay;
-                // position *= songSource.pitch;
-            }
 
-            if (lastSongPosition > position && !finished)
-            {
-                finished = true;
-                Finished();
-            }
-            lastSongPosition = position;
-            
-            return position;
+    public float SongPosition(bool accountVisual, bool accountInput, bool accountAudio)
+    {
+        var offset = (accountVisual ? visualOffset : 0f) +
+                     (accountInput ? inputOffset : 0f) +
+                     (accountAudio ? audioOffset : 0f);
+        if (accountAudio && accountVisual && !accountInput)
+            offset = audioVisualOffset;
+        else if (accountAudio && accountInput && !accountVisual)
+            offset = audioInputOffset;
+        var position = ((float)songSource.timeSamples / songSource.clip.frequency);
+
+        if (hasBeforePlayDelay && AudioSettings.dspTime - initialDspOffset <=
+            BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay)
+        {
+            position = (float)(AudioSettings.dspTime - initialDspOffset) -
+                       BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay;
+            // position *= songSource.pitch;
         }
+
+        if (lastSongPosition > position && !finished)
+        {
+            finished = true;
+            Finished();
+        }
+
+        lastSongPosition = position;
+
+        position -= offset * songSource.pitch;
+        return position;
     }
 
-    public float songPositionInBeats
+    public float SongPositionInBeats(bool accountVisual, bool accountInput, bool accountAudio)
     {
-        get
-        {
-            return (songPosition - (float)BeatmapManager.Instance.currentPlayingBeatmap.initialOffset) /
-                   (float)BeatmapManager.Instance.currentPlayingBeatmap.SecondsPerBeatAt((int)(songPosition * 1000));
-        }
+        float songPosition = SongPosition(accountVisual, accountInput, accountAudio);
+        return (songPosition - (float)BeatmapManager.Instance.currentPlayingBeatmap.initialOffset) /
+               (float)BeatmapManager.Instance.currentPlayingBeatmap.SecondsPerBeatAt((int)(songPosition * 1000));
     }
 
     public static Conductor Instance { get; private set; }
@@ -101,6 +114,7 @@ public class Conductor : MonoBehaviour
         Instance = this;
 
         songSource = GetComponent<AudioSource>();
+        songVolume = songSource.volume;
         BeatmapManager.Instance.OnPlay += StartSong;
         BeatmapManager.Instance.OnPauseStart += PauseSlowedPause;
         BeatmapManager.Instance.OnResume += SmoothResume;
@@ -129,7 +143,7 @@ public class Conductor : MonoBehaviour
     {
         initialDspOffset = (float)AudioSettings.dspTime;
         songSource.clip = BeatmapManager.Instance.currentPlayingBeatmap.audioClip;
-        
+
         songSource.PlayScheduled(initialDspOffset + BeatmapManager.Instance.currentPlayingBeatmap.beforePlayDelay);
     }
 
@@ -170,9 +184,9 @@ public class Conductor : MonoBehaviour
         {
             songSource.pitch += Time.deltaTime * ResumeSpeed;
             songSource.volume += Time.deltaTime * ResumeSpeed;
-            if (songSource.pitch >= 1 || songSource.volume >= 1)
+            if (songSource.pitch >= 1 || songSource.volume >= songVolume)
             {
-                songSource.volume = 1;
+                songSource.volume = songVolume;
                 songSource.pitch = 1;
                 resuming = false;
             }

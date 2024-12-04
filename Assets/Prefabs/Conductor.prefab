@@ -45,9 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d966d717c68df4ab2b1c6868c3497b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualOffset: 0
+  inputOffset: 0
+  audioOffset: 0
+  audioVisualOffset: 0
+  audioInputOffset: 0
   gameOverSlowSpeed: 0.5
   PauseSlowSpeed: 5
   ResumeSpeed: 3
+  hasBeforePlayDelay: 1
 --- !u!82 &6688694808658305971
 AudioSource:
   m_ObjectHideFlags: 0
@@ -60,7 +66,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 public class HitObjectMover : MonoBehaviour
 {
     Vector3 initialPosition;
+    public float approachRateMultiplier;
 
    
     private void Start()
@@ -17,7 +18,7 @@ public class HitObjectMover : MonoBehaviour
     void Update()
     {
         var position = initialPosition;
-        position.x += -Conductor.Instance.songPosition * BeatmapManager.Instance.currentPlayingBeatmap.approachRate;
+        position.x += -Conductor.Instance.SongPosition(true, false, true) * BeatmapManager.Instance.currentPlayingBeatmap.approachRate * approachRateMultiplier;
         transform.localPosition = position;
     }
 

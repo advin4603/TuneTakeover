@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6119150109569279895}
-  - component: {fileID: 3293253542945510665}
   - component: {fileID: 1641367484662252951}
   m_Layer: 0
   m_Name: HitObjectManager
@@ -33,18 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1487151379437776844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3293253542945510665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738848374613447845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7976e7e1db8ec8a4f87ed30f83bdc7af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1641367484662252951
 MonoBehaviour:
   m_ObjectHideFlags: 0

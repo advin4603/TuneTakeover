@@ -39,9 +39,9 @@ public class BeatmapEventsManager : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        var songPosition = Conductor.Instance.songPosition * 1000;
+        var songPosition = Conductor.Instance.SongPosition(false, false, false) * 1000;
         while (nextEvent < BeatmapManager.Instance.currentPlayingBeatmap.hitObjects.Count &&
                BeatmapManager.Instance.currentPlayingBeatmap.hitObjects[nextEvent].time < songPosition)
         {

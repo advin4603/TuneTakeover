@@ -49,6 +49,17 @@
                 },
                 {
                     "name": "",
+                    "id": "e1196b61-04fe-4335-8ac2-3e0263cfb298",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b4d5b578-9096-44b9-ba6b-d29c8e2ace03",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -62,6 +73,17 @@
                     "name": "",
                     "id": "d95fce48-df22-4f26-bb54-98984d5f287b",
                     "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Defend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3734405-a48d-4148-a373-a3923216ce94",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

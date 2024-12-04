@@ -8,6 +8,7 @@ public class SpriteAnimationSync : MonoBehaviour
     private Animator _animator;
 
     public float speed = 1f;
+
     //Records the animation state or animation that the Animator is currently in
     AnimatorStateInfo animatorStateInfo;
 
@@ -30,9 +31,8 @@ public class SpriteAnimationSync : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float positionInBeats = Conductor.Instance.songPositionInBeats;
+        float positionInBeats = Conductor.Instance.SongPositionInBeats(true, false, true);
         if (positionInBeats >= 0)
             _animator.Play(idleState, -1, (positionInBeats - (int)positionInBeats) * speed);
-        
     }
 }

@@ -677,4 +677,5 @@ MonoBehaviour:
   thumbnail: {fileID: 21300000, guid: 0b306edc4d4467a49b92a0f117a54a90, type: 3}
   commonHitObjectEvent:
   - Enemy Beat Action
+  - Debug Hit
   audioClip: {fileID: 8300000, guid: bf888540ca4819341bb0ad394aa47745, type: 3}

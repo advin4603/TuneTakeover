@@ -28,9 +28,11 @@ public class SongBeatmap : ScriptableObject
         public enum SongHitObjectType
         {
             Attack,
-            Defend
+            Defend,
+            Virtual
         }
 
+        public float approachMultiplier = 1;
         public SongHitObjectType hitObjectType;
         public float time;
         public List<string> hitObjectEvent;

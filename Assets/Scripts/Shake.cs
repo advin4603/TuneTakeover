@@ -19,7 +19,7 @@ public class Shake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int beatCount = (int)Conductor.Instance.songPositionInBeats;
+        int beatCount = (int)Conductor.Instance.SongPositionInBeats(true, false, true);
         if (oldBeat != beatCount)
         {
             oldBeat = beatCount;
